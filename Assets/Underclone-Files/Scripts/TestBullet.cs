@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TestBullet : MonoBehaviour {
+    /* Not for use
 
     private GameObject player;
     public float followSpeed;
@@ -27,4 +28,5 @@ public class TestBullet : MonoBehaviour {
     {
         Destroy(gameObject);
     }
+    */
 }

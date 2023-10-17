@@ -5,6 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class Enemy
 {
+    /* Not for use
+
     public string name = "Dummy";
     public int hp = 10;
     public int gold = 0;
@@ -14,10 +16,13 @@ public class Enemy
         "test dialog 1",
         "test dialog 2"
     };
+    */
 }
 
 [System.Serializable]
 public class EnemyList : MonoBehaviour
 {
+    /*
     public Enemy[] enemies;
+    */
 }

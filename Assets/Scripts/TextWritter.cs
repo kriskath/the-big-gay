@@ -13,14 +13,6 @@ public class TextWritter : MonoBehaviour
     private AudioSource voice;
     private Regex regex;
 
-    // Use this for initialization
-    void Start()
-    {
-        this.regex = new Regex("^[a-zA-Z0-9]*$");
-        this.voice = GetComponent<AudioSource>();
-        this.text = GetComponent<TextMeshPro>().text;
-        StartCoroutine(ShowText());
-    }
 
     void OnEnable()
     {
@@ -32,9 +24,18 @@ public class TextWritter : MonoBehaviour
         currentText = "";
     }
 
+    void Start()
+    {
+        this.regex = new Regex("^[a-zA-Z0-9]*$");
+        this.voice = GetComponent<AudioSource>();
+        this.text = GetComponent<TextMeshPro>().text;
+        StartCoroutine(ShowText());
+    }
+
     IEnumerator ShowText()
     {
-        for (int i = 0; i < text.Length; i++) {
+        for (int i = 0; i < text.Length; i++) 
+        {
             string currentLetter = text[i].ToString();
             this.SpeakText(currentLetter);
             this.GetComponent<TextMeshPro>().text = currentText += currentLetter;
@@ -44,7 +45,8 @@ public class TextWritter : MonoBehaviour
 
     void SpeakText(string currentLetter)
     {
-        if (this.voice && regex.IsMatch(currentLetter)) {
+        if (this.voice && regex.IsMatch(currentLetter)) 
+        {
             this.voice.Play();
         }
     }

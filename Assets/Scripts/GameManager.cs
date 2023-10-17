@@ -12,13 +12,6 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey("f1")) {
-            StartBattle();
-        }
-	}
 
-    void StartBattle()
-    {
-        SceneManager.LoadScene("Battle");
-    }
+	}
 }

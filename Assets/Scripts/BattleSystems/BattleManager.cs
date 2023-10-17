@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class BattleManager : MonoBehaviour {
 
     public GameObject player;
-    public GameObject battleArea;
-    public GameObject fightArea;
+    //public GameObject battleArea;
+    //public GameObject fightArea;
     public GameObject actMenu;
     public GameObject mainMenu;
     public GameObject itemMenu;
@@ -27,8 +27,8 @@ public class BattleManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        battleAreaScale = battleArea.transform.localScale;
-        battleAreaInitialScale = battleArea.transform.localScale;
+        //battleAreaScale = battleArea.transform.localScale;
+        //battleAreaInitialScale = battleArea.transform.localScale;
         playerInitialPosition = player.transform.position;
     }
 	
@@ -37,53 +37,66 @@ public class BattleManager : MonoBehaviour {
 
         GameObject.FindGameObjectWithTag("DebugText").GetComponent<TextMeshPro>().SetText("Context: " + currentContext.ToString());
 
-        if (Input.GetKeyDown("z") || Input.GetKeyDown("enter")) {
+        if (Input.GetKeyDown("z") || Input.GetKeyDown("enter")) 
+        {
             currentContext = buttons[menuIndex].context;
         }
 
-        if (Input.GetKeyDown("x")) {
+        if (Input.GetKeyDown("x")) 
+        {
             currentContext = Context.MainMenu;
         }
 
         // Move around the UI
         switch (currentContext) {
             case (Context.MainMenu):
-                if (Input.GetKeyDown("left") || Input.GetKeyDown("a")) {
+                if (Input.GetKeyDown("left") || Input.GetKeyDown("a")) 
+                {
                     menuIndex--;
-                } else if (Input.GetKeyDown("right") || Input.GetKeyDown("d")) {
+                } 
+                else if (Input.GetKeyDown("right") || Input.GetKeyDown("d")) 
+                {
                     menuIndex++;
                 }
-                
-                if (menuIndex < 0) {
+
+                //Cross over menu checks
+                if (menuIndex < 0) 
+                {
                     menuIndex = menuIndexMax;
                 }
-
-                if (menuIndex > menuIndexMax) {
+                if (menuIndex > menuIndexMax) 
+                {
                     menuIndex = 0;
                 }
-                battleAreaScale = battleAreaInitialScale;
+
+                //battleAreaScale = battleAreaInitialScale;
                 actMenu.SetActive(false);
                 mainMenu.SetActive(true);
                 itemMenu.SetActive(false);
                 spareMenu.SetActive(false);
                 UpdateMenu();
                 break;
+
             case (Context.PlayerTurn):
                 StartCoroutine(PlayerFight());
                 mainMenu.SetActive(false);
                 break;
+
             case (Context.EnemyTurn):
-                battleAreaScale = new Vector2(.3f, battleAreaInitialScale.y);
+                //battleAreaScale = new Vector2(.3f, battleAreaInitialScale.y);
                 mainMenu.SetActive(false);
                 break;
+
             case (Context.ActMenu):
                 actMenu.SetActive(true);
                 mainMenu.SetActive(false);
                 break;
+
             case (Context.ItemMenu):
                 itemMenu.SetActive(true);
                 mainMenu.SetActive(false);
                 break;
+
             case (Context.SpareMenu):
                 spareMenu.SetActive(true);
                 mainMenu.SetActive(false);
@@ -93,9 +106,34 @@ public class BattleManager : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        ResizeBattleArea(battleAreaScale);
+        //ResizeBattleArea(battleAreaScale);
     }
 
+    void UpdateMenu()
+    {
+        for(int i = 0; i <= menuIndexMax; i++) 
+        {
+            GameObject currentButton = buttons[i].instance;
+
+            //if selected battle button
+            if (menuIndex == i) 
+            {
+                currentButton.GetComponent<SpriteRenderer>().sprite = buttons[i].spriteActive;
+                player.transform.position = new Vector2(
+                    currentButton.transform.position.x - .15f,
+                    currentButton.transform.position.y
+                );
+            } 
+            else 
+            {
+                currentButton.GetComponent<SpriteRenderer>().sprite = buttons[i].spriteInactive;
+            }
+        }
+        
+    }
+
+/*
+    //We dont want this?
     IEnumerator PlayerFight()
     {
         fightArea.SetActive(true);
@@ -103,11 +141,13 @@ public class BattleManager : MonoBehaviour {
         StartCoroutine(EnemyFight());
     }
 
+    //We dont want this?
     IEnumerator EnemyFight()
     {
         fightArea.SetActive(false);
         currentContext = Context.EnemyTurn;
-        if(player.GetComponent<Player>().canMove == false) {
+        if (player.GetComponent<Player>().canMove == false) 
+        {
             player.transform.position = playerInitialPosition;
             player.GetComponent<Player>().canMove = true;
         }
@@ -117,25 +157,7 @@ public class BattleManager : MonoBehaviour {
         player.GetComponent<Player>().StopMoving();
         currentContext = Context.MainMenu;
     }
-
-    void UpdateMenu()
-    {
-        for(int i = 0; i <= menuIndexMax; i++) {
-            GameObject currentButton = buttons[i].instance;
-
-            if (menuIndex == i) {
-                currentButton.GetComponent<SpriteRenderer>().sprite = buttons[i].spriteActive;
-                player.transform.position = new Vector2(
-                    currentButton.transform.position.x - .15f,
-                    currentButton.transform.position.y
-                );
-            } else {
-                currentButton.GetComponent<SpriteRenderer>().sprite = buttons[i].spriteInactive;
-            }
-        }
-        
-    }
-
+    
     void SpawnTestBullet()
     {
         GameObject newTestBullet = Instantiate(testBullet);
@@ -149,4 +171,5 @@ public class BattleManager : MonoBehaviour {
     {
         battleArea.transform.localScale = Vector2.Lerp(battleArea.transform.localScale, size, 5f * Time.deltaTime);
     }
+*/
 }

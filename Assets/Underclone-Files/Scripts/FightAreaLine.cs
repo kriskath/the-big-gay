@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FightAreaLine : MonoBehaviour {
-
+public class FightAreaLine : MonoBehaviour 
+{
+    /* Not for use
     private float speed = 1f;
 
     private Vector3 start;
@@ -21,13 +22,16 @@ public class FightAreaLine : MonoBehaviour {
 
     void Update()
     {
-
-        if (fraction < 1) {
+        if (fraction < 1) 
+        {
             fraction += Time.deltaTime * speed;
             transform.position = Vector3.Lerp(start, end, fraction);
-        } else {
+        } 
+        else 
+        {
             fraction = 0;
             transform.position = initialPosition;
         }
     }
+    */
 }
