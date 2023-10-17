@@ -26,9 +26,9 @@ public class TextWritter : MonoBehaviour
 
     void Start()
     {
-        this.regex = new Regex("^[a-zA-Z0-9]*$");
-        this.voice = GetComponent<AudioSource>();
-        this.text = GetComponent<TextMeshPro>().text;
+        regex = new Regex("^[a-zA-Z0-9]*$");
+        voice = GetComponent<AudioSource>();
+        text = GetComponent<TextMeshPro>().text;
         StartCoroutine(ShowText());
     }
 
@@ -37,17 +37,17 @@ public class TextWritter : MonoBehaviour
         for (int i = 0; i < text.Length; i++) 
         {
             string currentLetter = text[i].ToString();
-            this.SpeakText(currentLetter);
-            this.GetComponent<TextMeshPro>().text = currentText += currentLetter;
+            SpeakText(currentLetter);
+            GetComponent<TextMeshPro>().text = currentText += currentLetter;
             yield return new WaitForSeconds(delay);
         }
     }
 
     void SpeakText(string currentLetter)
     {
-        if (this.voice && regex.IsMatch(currentLetter)) 
+        if (voice && regex.IsMatch(currentLetter)) 
         {
-            this.voice.Play();
+            voice.Play();
         }
     }
 }

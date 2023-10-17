@@ -7,7 +7,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Player : MonoBehaviour 
 {
-    private int health = 10;
+    private int health = 10; //Do we need this?
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private float vertical;
@@ -26,13 +26,14 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
     {
+        HandleAnimation();
+
         UpdateMovement();
 
         CheckInteract();
     }
 
-    //Updates player movement and animations
-    private void UpdateMovement()
+    private void HandleAnimation()
     {
         if (canMove) {
             vertical = Input.GetAxisRaw("Vertical");
@@ -67,7 +68,11 @@ public class Player : MonoBehaviour
                     break;
             }
         }
+    }
 
+    //Updates player movement and animations
+    private void UpdateMovement()
+    {
         //clamp movement
         Vector2 movement = new Vector2(horizontal, vertical);
         if (movement.magnitude > 1)
@@ -79,9 +84,9 @@ public class Player : MonoBehaviour
 
     public void StopMoving()
     {
-        this.horizontal = 0;
-        this.vertical = 0;
-        this.canMove = false;
+        horizontal = 0;
+        vertical = 0;
+        canMove = false;
     }
 
     private void CheckInteract()
@@ -94,6 +99,7 @@ public class Player : MonoBehaviour
 
     void Interact()
     {
-        //TODO: Use an Interactables Interface to signal for starting Dialogue, picking items up, or general interaction scripting
+
+        //TODO: Check for interactable object and call .Interact()
     }
 }

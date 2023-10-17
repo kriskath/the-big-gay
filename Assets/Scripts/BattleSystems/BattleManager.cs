@@ -6,14 +6,15 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour {
 
-    public GameObject player;
     //public GameObject battleArea;
     //public GameObject fightArea;
+    //public GameObject testBullet;
+    //public GameObject spareMenu;
+
+    public GameObject player;
     public GameObject actMenu;
     public GameObject mainMenu;
     public GameObject itemMenu;
-    public GameObject spareMenu;
-    public GameObject testBullet;
     public BattleButton[] buttons;
 
     private Context currentContext = Context.MainMenu;
@@ -35,7 +36,7 @@ public class BattleManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        GameObject.FindGameObjectWithTag("DebugText").GetComponent<TextMeshPro>().SetText("Context: " + currentContext.ToString());
+        //GameObject.FindGameObjectWithTag("DebugText").GetComponent<TextMeshPro>().SetText("Context: " + currentContext.ToString());
 
         if (Input.GetKeyDown("z") || Input.GetKeyDown("enter")) 
         {
@@ -73,12 +74,12 @@ public class BattleManager : MonoBehaviour {
                 actMenu.SetActive(false);
                 mainMenu.SetActive(true);
                 itemMenu.SetActive(false);
-                spareMenu.SetActive(false);
+                //spareMenu.SetActive(false);
                 UpdateMenu();
                 break;
 
             case (Context.PlayerTurn):
-                StartCoroutine(PlayerFight());
+                //StartCoroutine(PlayerFight());
                 mainMenu.SetActive(false);
                 break;
 
@@ -98,7 +99,7 @@ public class BattleManager : MonoBehaviour {
                 break;
 
             case (Context.SpareMenu):
-                spareMenu.SetActive(true);
+                //spareMenu.SetActive(true);
                 mainMenu.SetActive(false);
                 break;
         }
