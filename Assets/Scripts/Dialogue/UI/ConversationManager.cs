@@ -352,7 +352,10 @@ namespace DialogueEditor
 
                 DialogueText.maxVisibleCharacters = m_scrollIndex;
                 m_scrollIndex++;
-
+                if (AudioPlayer != null)
+                {
+                    AudioPlayer.Play();
+                }
                 // Finished?
                 if (m_scrollIndex >= m_targetScrollTextCount)
                 {
