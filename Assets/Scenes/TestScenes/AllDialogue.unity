@@ -169,10 +169,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":0}],"EditorInfo":{"isRoot":false,"xPos":376,"yPos":170},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes
-    let''s do it!","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":140,"yPos":159},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    are already a drag queen, yas mawmaw gawd, boots the house down, charlie xcx\n","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":241,"yPos":-3},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    wanna be a drag queeennn","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wizard","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.564},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":139,"yPos":314},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"*tongue
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":0}],"EditorInfo":{"isRoot":false,"xPos":260,"yPos":211},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes
+    let''s do it!","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":25,"yPos":200},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    are already a drag queen, yas mawmaw gawd, boots the house down, charlie xcx\n","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":126,"yPos":38},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    wanna be a drag queeennn","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wizard","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.564},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":23,"yPos":354},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"*tongue
     pop*","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Me","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -508,7 +508,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 3
-  TMPFont: {fileID: 0}
+  TMPFont: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1293187483
@@ -768,7 +768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5df3b7422c81b7643965ebb7b4687ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 0}
+  conversation: {fileID: 536909620}
 --- !u!61 &1398250528
 BoxCollider2D:
   m_ObjectHideFlags: 0
