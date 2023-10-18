@@ -8,6 +8,6 @@ public enum Context
     PlayerTurn,
     EnemyTurn,
     ItemMenu,
-    ActMenu,
-    SpareMenu
+    ActMenu
+    //SpareMenu
 };

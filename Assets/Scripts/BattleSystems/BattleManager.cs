@@ -97,11 +97,6 @@ public class BattleManager : MonoBehaviour {
                 itemMenu.SetActive(true);
                 mainMenu.SetActive(false);
                 break;
-
-            case (Context.SpareMenu):
-                //spareMenu.SetActive(true);
-                mainMenu.SetActive(false);
-                break;
         }
     }
 
