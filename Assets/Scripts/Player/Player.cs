@@ -7,18 +7,24 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Player : MonoBehaviour 
 {
-    private int health = 10; //Do we need this?
+
+    [SerializeField] private float interactionDistance = 2.0f;
+    [SerializeField] private LayerMask interactableLayer;     // Need to set a layer in Edit -> Project Settings -> Tags and Layers
+    
+    private Animator animator;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
+
+    public bool CanMove => _canMove;
+    private bool _canMove = true;
+    
+    public bool CanInteract => _canInteract;
+    private bool _canInteract = true;
+    
     private float vertical;
     private float horizontal;
-
-    public float interactionDistance = 2.0f;
-    public LayerMask interactableLayer;     // Need to set a layer in Edit -> Project Settings -> Tags and Layers
-    public bool canMove = true;
-    private Animator animator;
-
-	// Use this for initialization
+	
+    // Use this for initialization
 	void Start () 
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,17 +35,19 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        if (canMove){
+        if (CanMove)
+        {
             vertical = Input.GetAxisRaw("Vertical");
             horizontal = Input.GetAxisRaw("Horizontal");
-       // HandleAnimation();
-        UpdateMovement();
-          if (Input.GetKeyDown(KeyCode.E))
+            UpdateMovement();
+            
+            // HandleAnimation();
+            
+            if (CanInteract && Input.GetKeyDown(KeyCode.E))
             {
-               CheckForNPCs();
+                CheckForNPCs();
             }  
         }
-  
     }
 
     private void HandleAnimation()
@@ -92,7 +100,7 @@ public class Player : MonoBehaviour
     {
         horizontal = 0;
         vertical = 0;
-        canMove = false;
+        SetCanMove(false);
     }
 
     void CheckForNPCs()
@@ -113,13 +121,25 @@ public class Player : MonoBehaviour
 
     public void StartConversation()
     {
-        canMove = false;
+        SetCanInteract(false);
+        SetCanMove(false);
         StopMoving(); 
     }
 
     public void EndConversation()
     {
-        canMove = true;
+        SetCanInteract(true);
+        SetCanMove(true);
+    }
+
+    public void SetCanMove(bool bCanMove)
+    {
+        _canMove = bCanMove;
+    }
+    
+    public void SetCanInteract(bool bCanInteract)
+    {
+        _canInteract = bCanInteract;
     }
 
 }
