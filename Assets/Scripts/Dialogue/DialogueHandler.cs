@@ -1,12 +1,19 @@
+using System;
 using UnityEngine;
 using DialogueEditor;
 
 public class DialogueHandler : MonoBehaviour
 {
-    private Player player;
+    [SerializeField] private Player player;
 
-    private void OnEnable(){
-        player = FindObjectOfType<Player>(); 
+    private void Start()
+    {
+        FindPlayer();
+    }
+
+    private void OnEnable()
+    {
+        FindPlayer();
         ConversationManager.OnConversationStarted += player.StartConversation;
         ConversationManager.OnConversationEnded += player.EndConversation;
     }
@@ -14,4 +21,13 @@ public class DialogueHandler : MonoBehaviour
         ConversationManager.OnConversationStarted -= player.StartConversation;
         ConversationManager.OnConversationEnded -= player.EndConversation;
     }
+
+    private void FindPlayer()
+    {
+        if (!player)
+        {
+            player = FindObjectOfType<Player>(); 
+        }
+    }
+    
 }
