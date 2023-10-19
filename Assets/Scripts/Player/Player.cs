@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float interactionDistance = 2.0f;
     [SerializeField] private LayerMask interactableLayer;     // Need to set a layer in Edit -> Project Settings -> Tags and Layers
+    [SerializeField] [Range(0f, 20f )] private float speed = 1f;
     
     private Animator animator;
     private Rigidbody2D rb;
@@ -93,7 +94,7 @@ public class Player : MonoBehaviour
         {
             movement = movement.normalized;
         }
-        rb.velocity = movement;
+        rb.velocity = movement * speed;
     }
 
     public void StopMoving()
