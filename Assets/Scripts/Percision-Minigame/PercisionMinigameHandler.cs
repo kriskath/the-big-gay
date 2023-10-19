@@ -16,8 +16,6 @@ public class PercisionMinigameHandler : MonoBehaviour
     private GameObject hitRegion;
     
     [Header("Configurables")]
-    [SerializeField] 
-    private Vector2 minigameDisplayLocation = Vector2.zero;
     [SerializeField] [Range(0f, 20f)] 
     private float slicerMovementSpeed = 10f;
     
