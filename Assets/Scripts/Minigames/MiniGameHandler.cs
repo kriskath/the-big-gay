@@ -5,10 +5,8 @@ public class MiniGameHandler : MonoBehaviour
 {
     public MiniGameType initialMiniGame;
     private IMiniGame currentMiniGame;
-    private GameObject miniGamePrefab;
-
     // Public variables for minigame prefabs.
-    public GameObject buttonMashingGamePrefab;
+    public ButtonMashingGame buttonMashingGame;
 
 
     private void Start()
@@ -19,13 +17,17 @@ public class MiniGameHandler : MonoBehaviour
 
     public void SwitchToMiniGame(MiniGameType gameType)
     {
-        GameObject miniGamePrefab = null;
+        // Disable the current mini-game (if any).
+        if (currentMiniGame != null)
+        {
+            currentMiniGame.StopMiniGame();
+        }
 
         // Determine which prefab to use based on the MiniGameType.
         switch (gameType)
         {
             case MiniGameType.ButtonMashing:
-                miniGamePrefab = buttonMashingGamePrefab;
+                currentMiniGame = buttonMashingGame;
                 break;
             case MiniGameType.NoGame:
                 break;
@@ -33,37 +35,27 @@ public class MiniGameHandler : MonoBehaviour
                 Debug.LogWarning("[MiniGameHandler] Minigame type not recognized.");
                 break;
         }
-        if (miniGamePrefab != null)
-        {
-            // Instantiate the selected mini-game prefab.
-            GameObject miniGameInstance = Instantiate(miniGamePrefab);
 
-            // Get the IMiniGame script from the instantiated GameObject.
-            currentMiniGame = miniGameInstance.GetComponent<IMiniGame>();
-
-            if (currentMiniGame != null)
-            {
-                // subscribe to their event
-                currentMiniGame.MiniGameCompleted += OnMiniGameCompleted;
-                currentMiniGame.StartMiniGame();
-            }
-            else
-            {
-                Debug.LogWarning("[MiniGameHandler] IMiniGame script not found on the instantiated GameObject.");
-            }
-        }
-        else
+        if (currentMiniGame != null)
         {
-            Debug.LogWarning("[MiniGameHandler] Minigame prefab not assigned.");
+            currentMiniGame.MiniGameCompleted += OnMiniGameCompleted;
+            currentMiniGame.MiniGameFailed += OnMiniGameFailed;
+            currentMiniGame.StartMiniGame();
         }
+
     }
 
     private void OnMiniGameCompleted()
     {
         Debug.Log("Completed Game");
-        // just need to figure out a better way to destroy
-        // if (miniGamePrefab != null) Destroy (miniGamePrefab);
-        initialMiniGame = MiniGameType.NoGame;
+        currentMiniGame.MiniGameCompleted -= OnMiniGameCompleted;
+    }
+
+    private void OnMiniGameFailed()
+    {
+        Debug.Log("Game Failed");
+        currentMiniGame.MiniGameCompleted -= OnMiniGameCompleted;
+        currentMiniGame.MiniGameFailed -= OnMiniGameFailed;
     }
 
 }
