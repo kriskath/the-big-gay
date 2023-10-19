@@ -1,18 +1,23 @@
 using UnityEngine;
-
+using DialogueEditor;
 
 public class MiniGameHandler : MonoBehaviour
 {
-    public MiniGameType initialMiniGame;
-    private IMiniGame currentMiniGame;
-    // Public variables for minigame prefabs.
-    public ButtonMashingGame buttonMashingGame;
+    public NPCConversation battleConversation;
 
+    private IMiniGame currentMiniGame;
+
+    // Public variables for minigame handlers.
+    public ButtonMashingGame buttonMashingGame;
 
     private void Start()
     {
-        // Can probably change this
-        SwitchToMiniGame(initialMiniGame);
+        ConversationManager.Instance.StartConversation(battleConversation);
+    }
+
+    // Unfortunately have to make these so the dialogue system calls them
+    public void StartButtonMasher (){
+        SwitchToMiniGame(MiniGameType.ButtonMashing);
     }
 
     public void SwitchToMiniGame(MiniGameType gameType)
@@ -23,13 +28,14 @@ public class MiniGameHandler : MonoBehaviour
             currentMiniGame.StopMiniGame();
         }
 
-        // Determine which prefab to use based on the MiniGameType.
+        // Determine which game to load based on the MiniGameType.
         switch (gameType)
         {
             case MiniGameType.ButtonMashing:
                 currentMiniGame = buttonMashingGame;
                 break;
             case MiniGameType.NoGame:
+                currentMiniGame = null;
                 break;
             default:
                 Debug.LogWarning("[MiniGameHandler] Minigame type not recognized.");
@@ -49,13 +55,21 @@ public class MiniGameHandler : MonoBehaviour
     {
         Debug.Log("Completed Game");
         currentMiniGame.MiniGameCompleted -= OnMiniGameCompleted;
+        currentMiniGame.MiniGameFailed -= OnMiniGameFailed;
+        ContiniueFight();
     }
 
     private void OnMiniGameFailed()
     {
         Debug.Log("Game Failed");
+        // Decrease morale here
         currentMiniGame.MiniGameCompleted -= OnMiniGameCompleted;
         currentMiniGame.MiniGameFailed -= OnMiniGameFailed;
+        ContiniueFight();
+    }
+
+    private void ContiniueFight(){
+        ConversationManager.Instance.StartConversation(battleConversation);
     }
 
 }

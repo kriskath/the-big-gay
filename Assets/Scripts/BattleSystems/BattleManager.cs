@@ -70,7 +70,7 @@ public class BattleManager : MonoBehaviour {
                     menuIndex = 0;
                 }
 
-                //battleAreaScale = battleAreaInitialScale;
+                battleAreaScale = battleAreaInitialScale;
                 actMenu.SetActive(false);
                 mainMenu.SetActive(true);
                 itemMenu.SetActive(false);

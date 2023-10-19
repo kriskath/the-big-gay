@@ -20,7 +20,7 @@ public class ButtonMashingGame : MonoBehaviour, IMiniGame
     private bool isGameActive = false;
     public event Action MiniGameCompleted; 
     public event Action MiniGameFailed;   
-
+ 
     public void StartMiniGame()
     {
         
@@ -28,6 +28,7 @@ public class ButtonMashingGame : MonoBehaviour, IMiniGame
         if (meterSlider != null)
         {
             meterSlider.gameObject.SetActive(true);
+            meterSlider.value = 0;
         }
         isGameActive = true;
         currentMeterValue = 0.0f;
@@ -47,7 +48,7 @@ public class ButtonMashingGame : MonoBehaviour, IMiniGame
         }
 
         // When the timer reaches zero, stop the game.
-        FailMiniGame();
+        if (isGameActive) FailMiniGame();
         
     }
 
@@ -70,7 +71,6 @@ public class ButtonMashingGame : MonoBehaviour, IMiniGame
     {
         DeactivateGame();
         MiniGameFailed?.Invoke();
-
     }
 
     
@@ -78,9 +78,9 @@ public class ButtonMashingGame : MonoBehaviour, IMiniGame
     {
         if (isGameActive)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("[Button Masher] space bar pressed ");
+                //Debug.Log("[Button Masher] space bar pressed ");
                 // Increase the meter value with each button press.
                 currentMeterValue += fillRate;
 
