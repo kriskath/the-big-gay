@@ -1,8 +1,8 @@
 public enum MiniGameType
 {
+    Fight,
     ButtonMashing,
-    Game2,
-    Game3,
-    Game4,
+    Precision,
+    Exit,
     NoGame
 }
