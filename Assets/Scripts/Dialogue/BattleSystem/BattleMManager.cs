@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using System; 
 
 namespace DialogueEditor
 {
@@ -14,6 +15,7 @@ namespace DialogueEditor
             Idle,
             TransitioningDialogueOff,
             Off,
+            WaitForInput,
             NONE,
         }
 
@@ -38,7 +40,9 @@ namespace DialogueEditor
         public RectTransform DialoguePanel;
         public Image DialogueBackground;
         public Image NpcIcon;
-        public TMPro.TextMeshProUGUI DialogueText;
+        private TMPro.TextMeshProUGUI DialogueText;
+        public TMPro.TextMeshProUGUI HeroDialogueText;
+        public TMPro.TextMeshProUGUI CompanionDialogueText;
         public AudioSource AudioPlayer;
 
         private float m_elapsedScrollTime;
@@ -50,6 +54,10 @@ namespace DialogueEditor
         private Conversation m_conversation;
         private SpeechNode m_currentSpeech;
 
+        private SpeechNode tmp_next;
+
+        public static event Action<string> OnNameChecked;
+
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -57,8 +65,8 @@ namespace DialogueEditor
                 GameObject.Destroy(this.gameObject);
             }
             Instance = this;
-
-            DialogueText.text = "";
+            CompanionDialogueText.text = "";
+            HeroDialogueText.text = "";
             TurnOffUI();
         }
 
@@ -85,6 +93,14 @@ namespace DialogueEditor
 
                 case eState.TransitioningDialogueOff:
                     TransitioningDialogueBoxOff_Update();
+                    break;
+                // there is more text, but i dont want it to scroll by itself
+                // wait for user to press e to continue
+                case eState.WaitForInput:
+                    if (Input.GetKeyDown(KeyCode.E)) {
+                        SetupSpeech(tmp_next);
+                        SetState(eState.ScrollingText);
+                    }
                     break;
             }
         }
@@ -131,6 +147,7 @@ namespace DialogueEditor
             }
         }
 
+
         private void ScrollingText_Update()
         {
             const float charactersPerSecond = 1500;
@@ -154,13 +171,23 @@ namespace DialogueEditor
                 if (m_scrollIndex >= m_targetScrollTextCount)
                 {
                     SpeechNode next = GetValidSpeechOfNode(m_currentSpeech);
-                    if (next == null)
+
+                     if (next == null)
                     {
                         SetState(eState.Idle);
+                        return;
+                    }
+
+                    if (!DialogueText.text.EndsWith("\n<align=right>>>"))
+                    {
+                        DialogueText.text += "\n<align=right>>>";
+                        m_targetScrollTextCount += 3;  // Increase the target count to account for the new characters
                     }
                     else
                     {
-                        SetupSpeech(next);
+                        // tell the user there is more to say
+                        SetState(eState.WaitForInput);
+                        tmp_next = next;
                     }
                 }
             }
@@ -192,7 +219,17 @@ namespace DialogueEditor
 
             m_currentSpeech = speech;
 
-            // Set sprite
+            // Set bubble
+            if (speech.Name == "hero")
+            {
+                DialogueText = HeroDialogueText;
+                OnNameChecked?.Invoke("hero");
+            }
+            else
+            {
+                DialogueText = CompanionDialogueText;
+                OnNameChecked?.Invoke("other");
+            }
 
             // Set text
             if (string.IsNullOrEmpty(speech.Text))
@@ -215,6 +252,7 @@ namespace DialogueEditor
             if (ScrollText)
             {
                 SetState(eState.ScrollingText);
+                
             }
             else
             {

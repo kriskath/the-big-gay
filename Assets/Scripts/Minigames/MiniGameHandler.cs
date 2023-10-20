@@ -2,6 +2,7 @@ using UnityEngine;
 using DialogueEditor;
 using UnityEngine.UI;
 
+
 public class MiniGameHandler : MonoBehaviour
 {
     public NPCConversation battleStart;
@@ -15,14 +16,30 @@ public class MiniGameHandler : MonoBehaviour
     public BattleButtons[] buttons;
 
     private int menuIndex = 0;
-    private int menuIndexMax = 1; // might want to change this for special cases like asgore
+    private int menuIndexMax = 2; // might want to change this for special cases like asgore
 
-    public GameObject battleUI;
+    //battle UI stuff
+    public GameObject[] dialogueBubbles;
 
+    // HP
+    public Slider hpSlider;
     public float hp = 100;
+    private bool gameOver = false;
+
+
+    private void OnEnable()
+    {
+        BattleMManager.OnNameChecked += HandleNameChecked;
+    }
+
+    private void OnDisable()
+    {
+        BattleMManager.OnNameChecked -= HandleNameChecked;
+    }
 
     private void Start()
     {
+        hpSlider.value = hp;
         NPCSpeak(battleStart);
     }
 
@@ -33,47 +50,50 @@ public class MiniGameHandler : MonoBehaviour
 
     private void NPCSpeak(NPCConversation convo){
         BattleMManager.Instance.StartConversation(convo);
-
     }
 
-    public void Update (){
-        if (BattleMManager.Instance.IsIdle()){
-
-            if (Input.GetKeyDown("z") || Input.GetKeyDown("enter")) 
-            {
-
-                SwitchToMiniGame(buttons[menuIndex].gameType);
-            }
-
-            if (Input.GetKeyDown("left") || Input.GetKeyDown("a")) 
-                {
-                    menuIndex--;
-                } 
-                else if (Input.GetKeyDown("right") || Input.GetKeyDown("d")) 
-                {
-                    menuIndex++;
-                }
-
-                //Cross over menu checks
-                if (menuIndex < 0) 
-                {
-                    menuIndex = menuIndexMax;
-                }
-                if (menuIndex > menuIndexMax) 
-                {
-                    menuIndex = 0;
-                }
-                UpdateMenu();
+  public void Update()
+    {
+        if (gameOver == false){
+            HandleInput();
+            UpdateMenu();
         }
 
-        if (hp <= 0){
+        if (hp <= 0)
+        {
+            gameOver = true;
             Debug.Log("[HP gone] you failed.");
         }
     }
 
-
-     void UpdateMenu()
+    void HandleInput()
     {
+        if (!BattleMManager.Instance.IsIdle() || currentMiniGame != null)
+            return;
+
+        if (Input.GetKeyDown("e") || Input.GetKeyDown("enter"))
+        {
+            SwitchToMiniGame(buttons[menuIndex].gameType);
+        }
+
+        if (Input.GetKeyDown("left") || Input.GetKeyDown("a"))
+        {
+            menuIndex = (menuIndex + 1) % (menuIndexMax + 1);
+        }
+        else if (Input.GetKeyDown("right") || Input.GetKeyDown("d"))
+        {
+            menuIndex = (menuIndex - 1 + menuIndexMax + 1) % (menuIndexMax + 1);
+        }
+    }
+
+    void UpdateMenu()
+    {
+        if (currentMiniGame != null || !BattleMManager.Instance.IsIdle())
+        {
+            foreach (var button in buttons)
+                button.instance.GetComponent<Image>().sprite = button.spriteInactive;
+            return;
+        }
         for(int i = 0; i <= menuIndexMax; i++) 
         {
             GameObject currentButton = buttons[i].instance;
@@ -89,7 +109,6 @@ public class MiniGameHandler : MonoBehaviour
                 currentButton.GetComponent<Image>().sprite = buttons[i].spriteInactive;
             }
         }
-        
     }
 
     public void SwitchToMiniGame(MiniGameType gameType)
@@ -104,11 +123,11 @@ public class MiniGameHandler : MonoBehaviour
         switch (gameType)
         {
             case MiniGameType.ButtonMashing:
-                battleUI.SetActive(false);
                 currentMiniGame = buttonMashingGame;
                 break;
             case MiniGameType.Fight:
                 NPCSpeak(battleNoFight);
+                hp -= 10;
                 currentMiniGame = null;
                 break;
             default:
@@ -118,19 +137,42 @@ public class MiniGameHandler : MonoBehaviour
 
         if (currentMiniGame != null)
         {
+            HideDialogueBubbles();
             currentMiniGame.MiniGameCompleted += OnMiniGameCompleted;
             currentMiniGame.MiniGameFailed += OnMiniGameFailed;
             currentMiniGame.StartMiniGame();
         }
-
     }
 
+    private void HideDialogueBubbles(){
+        foreach (GameObject bubble in dialogueBubbles)
+        {
+            bubble.SetActive(false);
+        }
+    }
+
+
+    private void HandleNameChecked(string name)
+    {
+        if (name == "hero")
+        {
+            // Toggle on the bubble for the hero
+            dialogueBubbles[0].SetActive(true);
+            dialogueBubbles[1].SetActive(false);
+        }
+        else
+        {
+            // Toggle on the bubble for the other guy
+            dialogueBubbles[0].SetActive(false);
+            dialogueBubbles[1].SetActive(true);
+        }
+    }
     private void OnMiniGameCompleted()
     {
         Debug.Log("Completed Game");
         currentMiniGame.MiniGameCompleted -= OnMiniGameCompleted;
         currentMiniGame.MiniGameFailed -= OnMiniGameFailed;
-        ContiniueFight();
+        ContinueFight();
     }
 
     private void OnMiniGameFailed()
@@ -140,11 +182,12 @@ public class MiniGameHandler : MonoBehaviour
         currentMiniGame.MiniGameCompleted -= OnMiniGameCompleted;
         currentMiniGame.MiniGameFailed -= OnMiniGameFailed;
         hp -= 10;
-        ContiniueFight();
+        hpSlider.value = hp;
+        ContinueFight();
     }
 
-    private void ContiniueFight(){
-        battleUI.SetActive(true);
+    private void ContinueFight(){
+        currentMiniGame = null;
         NPCSpeak(battleStart);
     }
 
