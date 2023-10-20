@@ -381,7 +381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &178488907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -415, y: -52}
+  m_AnchoredPosition: {x: 413, y: -52}
   m_SizeDelta: {x: 348, y: 319}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178488908
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_Material: {fileID: 2100000, guid: 9a47494be39111c44809110fed3af2d1, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1112,7 +1112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &675117609
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1129,7 +1129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -456, y: 254}
+  m_AnchoredPosition: {x: 456, y: 254}
   m_SizeDelta: {x: 348, y: 319}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &675117610
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_Material: {fileID: 2100000, guid: 9a47494be39111c44809110fed3af2d1, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2175,12 +2175,12 @@ GameObject:
   - component: {fileID: 1172019369}
   - component: {fileID: 1172019368}
   m_Layer: 5
-  m_Name: Fight
+  m_Name: Bake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1172019367
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2197,7 +2197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -151.99998, y: 456.00003}
+  m_AnchoredPosition: {x: 181, y: 456.00003}
   m_SizeDelta: {x: 348, y: 319}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1172019368
@@ -2212,7 +2212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_Material: {fileID: 2100000, guid: 9a47494be39111c44809110fed3af2d1, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2220,7 +2220,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dd2af24e4ad140a468ff933d2c4592aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ef8796ce0120c142829e4838274fdc3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2500,6 +2500,7 @@ GameObject:
   - component: {fileID: 1604457283}
   - component: {fileID: 1604457287}
   - component: {fileID: 1604457288}
+  - component: {fileID: 1604457289}
   m_Layer: 5
   m_Name: BattleUI
   m_TagString: Untagged
@@ -2711,6 +2712,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1604457289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604457282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e8d6b31419d8e640b4ad564daf35a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueBubbles:
+  - {fileID: 835631780}
+  - {fileID: 1105682498}
+  hpSlider: {fileID: 1880914546}
+  buttons:
+  - instance: {fileID: 1840831136}
+    spriteActive: {fileID: 21300000, guid: 76485ca60b0f3b74eb90b3114a8bd1a1, type: 3}
+    spriteInactive: {fileID: 21300000, guid: dd2af24e4ad140a468ff933d2c4592aa, type: 3}
+    gameType: 0
+  - instance: {fileID: 2084224561}
+    spriteActive: {fileID: 21300000, guid: 883a1b27edae6d9419f3c8016fe124af, type: 3}
+    spriteInactive: {fileID: 21300000, guid: c2456cc380b3ba64db5df20808835e93, type: 3}
+    gameType: 3
+  - instance: {fileID: 565603640}
+    spriteActive: {fileID: 21300000, guid: ec872c9ec4a205d4c876c8ed33f829c3, type: 3}
+    spriteInactive: {fileID: 21300000, guid: 8c3ae52b8cd4e324794a2e68782467d2, type: 3}
+    gameType: 3
+  companionAction:
+    instance: {fileID: 1172019366}
+    spriteActive: {fileID: 21300000, guid: a589258cb614a804289f95a560acfbfa, type: 3}
+    spriteInactive: {fileID: 21300000, guid: 8ef8796ce0120c142829e4838274fdc3, type: 3}
+    gameType: 1
 --- !u!1 &1628276582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,27 +3193,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a02c9bd9cea6349bf809e9a85d0a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonMashingGame: {fileID: 1628276584}
+  battleUI: {fileID: 1604457289}
   battleStart: {fileID: 1915431100}
   battleNoFight: {fileID: 626746339}
-  buttonMashingGame: {fileID: 1628276584}
-  buttons:
-  - instance: {fileID: 1840831136}
-    spriteActive: {fileID: 21300000, guid: 76485ca60b0f3b74eb90b3114a8bd1a1, type: 3}
-    spriteInactive: {fileID: 21300000, guid: dd2af24e4ad140a468ff933d2c4592aa, type: 3}
-    gameType: 0
-  - instance: {fileID: 2084224561}
-    spriteActive: {fileID: 21300000, guid: 883a1b27edae6d9419f3c8016fe124af, type: 3}
-    spriteInactive: {fileID: 21300000, guid: c2456cc380b3ba64db5df20808835e93, type: 3}
-    gameType: 1
-  - instance: {fileID: 565603640}
-    spriteActive: {fileID: 21300000, guid: ec872c9ec4a205d4c876c8ed33f829c3, type: 3}
-    spriteInactive: {fileID: 21300000, guid: 8c3ae52b8cd4e324794a2e68782467d2, type: 3}
-    gameType: 4
-  dialogueBubbles:
-  - {fileID: 835631780}
-  - {fileID: 1105682498}
-  hpSlider: {fileID: 1880914546}
-  hp: 100
 --- !u!4 &1940449128
 Transform:
   m_ObjectHideFlags: 0
