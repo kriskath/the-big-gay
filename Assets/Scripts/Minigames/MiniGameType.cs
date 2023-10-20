@@ -3,6 +3,7 @@ public enum MiniGameType
     Fight,
     ButtonMashing,
     Precision,
-    Exit,
+    Defend,
+    Run,
     NoGame
 }

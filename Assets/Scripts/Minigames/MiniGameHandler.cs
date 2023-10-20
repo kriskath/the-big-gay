@@ -54,6 +54,14 @@ public class MiniGameHandler : MonoBehaviour
                 battleUI.UpdateHP(-10);
                 currentMiniGame = null;
                 break;
+            case MiniGameType.Defend:
+                battleUI.NPCSpeak(battleStart);
+                currentMiniGame = null;
+                break;
+            case MiniGameType.Run:
+                battleUI.NPCSpeak(battleStart);
+                currentMiniGame = null;
+                break;
             case MiniGameType.NoGame:
                 currentMiniGame = null;
                 break;
@@ -64,6 +72,7 @@ public class MiniGameHandler : MonoBehaviour
 
         if (currentMiniGame != null)
         {
+            battleUI.inGame = true;
             battleUI.HideDialogueBubbles();
             currentMiniGame.MiniGameCompleted += OnMiniGameCompleted;
             currentMiniGame.MiniGameFailed += OnMiniGameFailed;
@@ -94,6 +103,7 @@ public class MiniGameHandler : MonoBehaviour
 
     private void ContinueFight(){
         currentMiniGame = null;
+        battleUI.inGame = false;
         battleUI.NPCSpeak(battleStart);
     }
 

@@ -20,6 +20,8 @@ public class BattleUI : MonoBehaviour
 
     public static event Action<MiniGameType> OnSwitchGame;
 
+    public bool inGame = false;
+
     private void OnEnable()
     {
         BattleMManager.OnNameChecked += HandleNameChecked;
@@ -51,7 +53,7 @@ public class BattleUI : MonoBehaviour
     private void HandleInput()
     {
         //current minigame also
-        if (!BattleMManager.Instance.IsIdle())
+        if (inGame || !BattleMManager.Instance.IsIdle())
             return;
 
         if (Input.GetKeyDown("e") || Input.GetKeyDown("enter"))
@@ -69,10 +71,10 @@ public class BattleUI : MonoBehaviour
         }
     }
 
-    //current minigame also currentMiniGame != null ||
+    //current minigame also 
     void UpdateMenu()
     {
-        if ( !BattleMManager.Instance.IsIdle())
+        if (inGame || !BattleMManager.Instance.IsIdle())
         {
             foreach (var button in buttons)
                 button.instance.GetComponent<Image>().sprite = button.spriteInactive;

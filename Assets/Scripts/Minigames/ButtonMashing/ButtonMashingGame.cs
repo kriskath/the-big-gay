@@ -37,6 +37,7 @@ public class ButtonMashingGame : MonoBehaviour, IMiniGame
         isGameActive = true;
         currentMeterValue = 0.0f;
         timeLeft = gameDuration;
+        StopCoroutine(Countdown());
         StartCoroutine(Countdown());
     }
 
@@ -103,6 +104,7 @@ public class ButtonMashingGame : MonoBehaviour, IMiniGame
                 {
                     // Mini-game completed.
                     isGameActive = false;
+                    Debug.Log(currentMeterValue);
                     Debug.Log("[Button Masher] Game Completed!");
                     StopMiniGame();
                 }

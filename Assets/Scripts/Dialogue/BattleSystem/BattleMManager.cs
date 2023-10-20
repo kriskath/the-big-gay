@@ -239,6 +239,12 @@ namespace DialogueEditor
                 DialogueText.maxVisibleCharacters = 0;
                 m_elapsedScrollTime = 0f;
                 m_scrollIndex = 0;
+                 SpeechNode next = GetValidSpeechOfNode(m_currentSpeech);
+                if (next != null)
+                {
+                    SetupSpeech(next);
+                    return;
+                }
             }
             else
             {
@@ -273,16 +279,24 @@ namespace DialogueEditor
         {
             if (parentNode.Connections.Count == 0) { return null; }
 
+            // Create a list to store all valid speech nodes.
+            List<SpeechNode> validSpeechNodes = new List<SpeechNode>();
+
             for (int i = 0; i < parentNode.Connections.Count; i++)
             {
                 SpeechConnection connection = parentNode.Connections[i] as SpeechConnection;
                 if (connection != null)
                 {
-                    return connection.SpeechNode;
+                    validSpeechNodes.Add(connection.SpeechNode);
                 }
             }
 
-            return null;
+            // If no valid speech nodes were found, return null.
+            if (validSpeechNodes.Count == 0) { return null; }
+
+            // Randomly select a valid speech node from the list and return it.
+            int randomIndex = UnityEngine.Random.Range(0, validSpeechNodes.Count);
+            return validSpeechNodes[randomIndex];
         }
 
         private void TurnOnUI()
