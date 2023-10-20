@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask interactableLayer;     // Need to set a layer in Edit -> Project Settings -> Tags and Layers
     [SerializeField] [Range(0f, 20f )] private float speed = 1f;
     
-    private Animator animator;
+    public Animator animator;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
 
@@ -36,6 +36,8 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+
         if (CanMove)
         {
             vertical = Input.GetAxisRaw("Vertical");

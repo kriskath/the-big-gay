@@ -161,6 +161,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   speed: 3
+  animator: {fileID: 1481770444}
 --- !u!95 &1481770444
 Animator:
   serializedVersion: 5
