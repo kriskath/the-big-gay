@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
             horizontal = Input.GetAxisRaw("Horizontal");
             UpdateMovement();
             
-            // HandleAnimation();
+            HandleAnimation();
             
             if (CanInteract && Input.GetKeyDown(KeyCode.E))
             {
@@ -55,27 +55,12 @@ public class Player : MonoBehaviour
 
     private void HandleAnimation()
     {
-        switch ((int) vertical) {
-            case (-1):
-                animator.SetBool("WalkDown", true);
-                animator.SetBool("WalkUp", false);
-                break;
-            case (1):
-                animator.SetBool("WalkUp", true);
-                animator.SetBool("WalkDown", false);
-                break;
-            default:
-                animator.SetBool("WalkDown", false);
-                animator.SetBool("WalkUp", false);
-                break;
-        }
-
         switch ((int)horizontal) {
-            case (-1):
+            case (<0):
                 animator.SetBool("WalkLeft", true);
                 animator.SetBool("WalkRight", false);
                 break;
-            case (1):
+            case (>0):
                 animator.SetBool("WalkRight", true);
                 animator.SetBool("WalkLeft", false);
                 break;
