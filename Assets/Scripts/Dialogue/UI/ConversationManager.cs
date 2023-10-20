@@ -36,6 +36,7 @@ namespace DialogueEditor
         public Sprite BackgroundImage;
         public bool BackgroundImageSliced;
         public Sprite OptionImage;
+        public Sprite OptionImageSelected;
         public bool OptionImageSliced;
         public bool AllowMouseInteraction;
 
@@ -54,6 +55,7 @@ namespace DialogueEditor
         public AudioSource AudioPlayer;
         // Prefabs
         public UIConversationButton ButtonPrefab;
+        public UIConversationButton ButtonPrefabSelect;
         // Default values
         public Sprite BlankSprite;
 
@@ -667,6 +669,7 @@ namespace DialogueEditor
                     {
                         UIConversationButton uiOption = CreateButton();
                         uiOption.SetupButton(UIConversationButton.eButtonType.Option, connection.OptionNode);
+                        uiOption.SetColorFont(Color.black);
                     }
                 }
             }
@@ -742,6 +745,8 @@ namespace DialogueEditor
             if (m_currentSelectedIndex >= 0)
                 m_uiOptions[m_currentSelectedIndex].SetHovering(false);
             m_currentSelectedIndex = index;
+            m_uiOptions[index].SetImage(OptionImageSelected, OptionImageSliced);
+            m_uiOptions[m_currentSelectedIndex].SetColorFont(Color.white);
             m_uiOptions[index].SetHovering(true);
         }
 
@@ -750,6 +755,8 @@ namespace DialogueEditor
             if (m_currentSelectedIndex < 0) { return; }
 
             m_uiOptions[m_currentSelectedIndex].SetHovering(false);
+            m_uiOptions[m_currentSelectedIndex].SetImage(OptionImage, OptionImageSliced);
+            m_uiOptions[m_currentSelectedIndex].SetColorFont(Color.black);
             m_currentSelectedIndex = -1;
         }
 
