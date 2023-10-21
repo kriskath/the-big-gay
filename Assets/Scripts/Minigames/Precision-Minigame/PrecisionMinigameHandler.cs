@@ -141,8 +141,26 @@ public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
         
         //HitRegion
         hitRegionHalfLen = hitRegionRenderer.bounds.extents.x;
+
+        //Start countdown
+        StartCoroutine(StartupCountdown());
+    }
+
+    private IEnumerator StartupCountdown()
+    {
+        bPaused = true;
         
         ResetMiniGame();
+        
+        float time = 0f;
+        while (time < timeToWait)
+        {
+            time += Time.deltaTime;
+            yield return null;
+        }
+        
+        
+        bPaused = false;
     }
 
     public void StopMiniGame()

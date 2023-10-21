@@ -566,7 +566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -226.30737, y: -69.63843}
+  m_AnchoredPosition: {x: -4.1, y: -189.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880249315
@@ -674,6 +674,10 @@ PrefabInstance:
     - target: {fileID: 2707689902159290220, guid: ba81f3ef972da231b93c27d69ab222ea, type: 3}
       propertyPath: m_Name
       value: PrecisionMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812456577336005001, guid: ba81f3ef972da231b93c27d69ab222ea, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7966892707269975736, guid: ba81f3ef972da231b93c27d69ab222ea, type: 3}
       propertyPath: m_LocalPosition.x
