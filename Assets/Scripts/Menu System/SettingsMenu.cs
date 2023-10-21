@@ -79,9 +79,37 @@ namespace MenuAsset
             Screen.SetResolution(res.width, res.height, Screen.fullScreen);
         }
 
-        public void SetVolume(float volume)
+        public void SetMainVolume(float volume)
         {
-            audioMixer.SetFloat("Volume", Mathf.Log10(volume) * 20); //represents slider value to log base 10 and mult by factor of 20
+            if (!audioMixer)
+            {
+                Debug.LogError("No assigned audio mixer, unable to set volume.");
+                return;
+            }
+
+            audioMixer.SetFloat("MasterVolume", Mathf.Log10(volume) * 20); //represents slider value to log base 10 and mult by factor of 20
+        }
+
+        public void SetSfxVolume(float volume)
+        {
+            if (!audioMixer)
+            {
+                Debug.LogError("No assigned audio mixer, unable to set volume.");
+                return;
+            }
+            
+            audioMixer.SetFloat("SFXVolume", Mathf.Log10(volume) * 20); //represents slider value to log base 10 and mult by factor of 20
+        }
+        
+        public void SetMusicVolume(float volume)
+        {
+            if (!audioMixer)
+            {
+                Debug.LogError("No assigned audio mixer, unable to set volume.");
+                return;
+            }
+
+            audioMixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20); //represents slider value to log base 10 and mult by factor of 20
         }
 
         public void SetQuality(int qualityIndex)

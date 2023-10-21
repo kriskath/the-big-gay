@@ -36,8 +36,7 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
-
+       
         if (CanMove)
         {
             vertical = Input.GetAxisRaw("Vertical");

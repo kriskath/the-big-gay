@@ -1,0 +1,4351 @@
+fileFormatVersion: 2
+guid: 494375c99315e90419e3bf4ff6cf7562
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_0
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2051
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b594317578ce974d97454af9ce34b28
+      internalID: -1164504481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_1
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2051
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8c2c50805064a43a964a97365b4bff
+      internalID: 1493668283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_2
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1923
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccecd3ef9b6fa54c934dd76bf726dd7
+      internalID: 508992463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1923
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0676eb90d2b9942a0343a4f12318f1
+      internalID: 845441539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_4
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1923
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c29be9364ad294c84822604bbea81c
+      internalID: -519703215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_5
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1923
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9037e12bd6116944a1625d78730d869
+      internalID: -731102491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_6
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1923
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537faa2b418f7eb4fbefe4af80da20a0
+      internalID: -929021618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1923
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92969ebb86f88d242b2cc3346ae05ec9
+      internalID: 728155081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ce2d43376c54f47ac938b1d90f76b4
+      internalID: -1146244180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d98d7ea7bb05c34babf7dd6222d5265
+      internalID: 1733941519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d992e4fa3a374f6479f2a66e2551ccdb
+      internalID: 56975635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150f0170d75bc16418c08ffddf76bdb6
+      internalID: 889096208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_12
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc7451bed8a4694597a4e3de9c1b945
+      internalID: -1864341348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2e7822575edfe41be1fc5eec2aee09
+      internalID: -2146209403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_14
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcfb7d21ff5ef44c8c9610f3b5345c8
+      internalID: 782383844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf7c78a0f024974a8e7b753638a3a27
+      internalID: 1319690029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_16
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73396c69f1ef5ee4b91cfe60f5bb27e8
+      internalID: 2012903820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_17
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1795
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4cd98fa11c6d343b884e305c0a736f
+      internalID: -540320608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a49c08b075e7f4f9811f9d477bf5e2
+      internalID: 602979152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_19
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c98258f78b5cc4992c1ad66855e278
+      internalID: -103031312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad9f03e24b1f3d42b99f40d93a7723e
+      internalID: -2027104570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d560486ca287c42a6fbd7640cddaa2
+      internalID: 391297774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_22
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc3d74bd3fe4cd4787945ff5ac1691f
+      internalID: 463431403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_23
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9471d6d0d267bd049a080351f832bad4
+      internalID: 962500690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_24
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340684a4b85f18545aa5a426ce71c76a
+      internalID: -214718359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_25
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ca47400cc5e8243bbe1f8eaf718454
+      internalID: -1358378534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_26
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd47afa09102e649ae24c714b90c109
+      internalID: 1080437665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_27
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dad788475b73741981fbd05653883a
+      internalID: 1874188987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_28
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0332f7819ff3047aec7801f5344174
+      internalID: 1629197643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_29
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1667
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4a3a3adb6f70d40aae1d0dd5ae5710
+      internalID: -588515771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391116556edb13e4d95a786ab32a7a54
+      internalID: -1500994053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700026fc7c0b45b4788aa9dacd16683a
+      internalID: -699794253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a38499c7362364fa97513225a3e399
+      internalID: 737592884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_33
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02c31d349f237440943090344bede33
+      internalID: -314283141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_34
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb11ddb7e955794089d5aff25acb4e1
+      internalID: -1698703725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00220b4e7afd4de45b4cb3cb508fcda4
+      internalID: -1681732621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_36
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cfb215f46d25040957a0bc842c6712
+      internalID: -776862004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_37
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1a307fa14026846b32586fade07a5e
+      internalID: -401177898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a5845acf352a9458af9233a026b6bc
+      internalID: -810428364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_39
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d889fb53067da3345bc6f40f43102c1f
+      internalID: 1910392116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_40
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8f6d37b26fb544fae5d46d42810bb8
+      internalID: -1843294024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_41
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282b109c26f1557429352a7eb8bd6636
+      internalID: -2099115767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_42
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dfcd30b02717f42983c673e09a68bf
+      internalID: 2090286634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_43
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0710efb4c80f440ac81f7a6590d076
+      internalID: -369663275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_44
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1539
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d15ad599500d7f4a9e4803808ee5b3c
+      internalID: -1831841181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480c6b2647d81ed4186b05a06bca9fdd
+      internalID: 394446971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1096e73e8bdd84cb5f5e884959b088
+      internalID: -1951809822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_47
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4549d49bf4ee80c49b15b03964943c98
+      internalID: -1584772232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_48
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1b7305b0205d143a0cb9f071cf9684
+      internalID: 270952419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ad492ff2325df4dadacf780deddd13
+      internalID: 289004409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_50
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e92592fedc90648984f484d1ef9759
+      internalID: -2050802893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_51
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebd88793a70f1b4c8ab53aab790b360
+      internalID: -768108376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600441f6b4f787b4bb570b723087da99
+      internalID: -12397263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_53
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a8c04368441ec4188cdc113338d00e
+      internalID: -1249091791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_54
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424ff83a28b74d845aa6ce942a92d2d2
+      internalID: 1772511645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_55
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf2ad85167908847a7c63b0acb9641b
+      internalID: 788355488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_56
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bde013a6866c714bba007011fea4799
+      internalID: 1686772976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_57
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6807d658a01e2446a41374dcddd0232
+      internalID: 1885849382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_58
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6704b669e2b3fad45b83ae2814e4b75b
+      internalID: -912458208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_59
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a0f3d1ce651c6478a12c65373a6636
+      internalID: 500450842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_60
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666950290c8e5bb41b8c9ca2b11aaacf
+      internalID: -1884816672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_61
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1411
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b33b04b3bf0ba4cb5c60a7a1ec071b
+      internalID: 978109908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1216053a0370241a25d4412246bc01
+      internalID: -809090460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_63
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9889cb5f55c72a40bef9ea63820356f
+      internalID: 1110160709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_64
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbdfb2cf87b1a24781cb6069af7bdc6
+      internalID: 758069828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_65
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f02a2c25149ae49b59f63ffd9d87d1
+      internalID: -1452866378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_66
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7da5d71cb424cb4e89826a5bc15d02b
+      internalID: 1785902050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_67
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1d238dcbdd34c42a1585b8fdda1b64
+      internalID: -429675177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_68
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4560627c96e8cf4da50d6dd54d48553
+      internalID: -79294493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_69
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946237c7ff2165a4db4130af79835431
+      internalID: -1870925340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_70
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb114cca641b914bb30db448d4f3a06
+      internalID: -1164910406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_71
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766dccd8e3688c04fb79a8d416834eab
+      internalID: 419980167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_72
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5afdaab0d4bd54bbf15427d7a3408a
+      internalID: -1655597080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_73
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3039a479e8102a42ae5b7a12ebf8825
+      internalID: 1793349317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_74
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a64155616378c5459db214cfa7bf50c
+      internalID: 1794754477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_75
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0b2004afc7fe743a84d90ad5e46902
+      internalID: -1542900246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_76
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdd8470915063b408757811477f90e7
+      internalID: 1872360511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_77
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1283
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9e51d233dea7749ac5c9fe7626b5f3
+      internalID: 1923820350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54c5f9e83d821c45aa951d1094922c7
+      internalID: 2133109181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_79
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ad047a77a9d27488282f73292ed5e0
+      internalID: 171482409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_80
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342a8e3374580534e979a3d62d1d7ee5
+      internalID: -990342028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_81
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a6c5962453d72408696c9b4f874b7e
+      internalID: -428494926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_82
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8168e368f2bfeb84c86578d85e01a25b
+      internalID: -1935088226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_83
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c879ce1fb491be24f9d11b8d5111afcf
+      internalID: -1857372943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_84
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708ac9331e0be1c43a654f888fd43cc1
+      internalID: -966970523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_85
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ae98985865d95488409f9b020d87eb
+      internalID: 1711923791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_86
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177a0b0cfd8f97844950504002fef810
+      internalID: -457640650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_87
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1155
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d282fed81dd87a49b1bb4e2a44ec54d
+      internalID: -1869526824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146824c094ceea84098b6f840cc0a1b1
+      internalID: 1281152276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_89
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913a238ed720d2b4d83855a1ac6ddeae
+      internalID: 1855580059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_90
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5627ac0d0e8fee40a7cc46d502366bc
+      internalID: -1765641273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_91
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc68835d8eb46204ebb2ecc8693bab38
+      internalID: 165020289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_92
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5211baed8a41a4a99206ff1acc7bb2
+      internalID: 186723187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_93
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1eeddc870357ff439b2aae012f644a8
+      internalID: -290030739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_94
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62a1cb1197e86f4d953a619a70cb7ee
+      internalID: 206674715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_95
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6b8b43274068f4ea9b40ebd9a11975
+      internalID: -1220508485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_96
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53a7a8f4cbb963459763f8217167652
+      internalID: -1482655785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_97
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1027
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c719d0b4179ea47b0376aa21cd6b07
+      internalID: -2108594940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7f3c6eceb0999488d7f5278207b43d
+      internalID: -167745907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_99
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1b577468df8604e926246ccd809c86
+      internalID: -1785415209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_100
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd0e25613c32ef4fb932104eed15bcc
+      internalID: -551907208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_101
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a2242077e3a3b479e630a30eb3ca7f
+      internalID: 1275547609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_102
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90a959896ba89547b3bd797da1119f4
+      internalID: -1061885096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_103
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b27905f2b4d5b4e95346bee01d9a6e
+      internalID: 1273432087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_104
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb06f5cb7976ee4a9193025aacf8cdd
+      internalID: 921747958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_105
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b67d80b37bf20c4b847bee1116f9ee9
+      internalID: 151301447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_106
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae6beb25a029bb40b29270bd2911820
+      internalID: 1821916098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_107
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89d864ff301d4144b2814071098e261
+      internalID: -716736907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_108
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b638ed276b371c54d95d317c9f08bdbe
+      internalID: -1408584895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_109
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61809a556752e040ab9d282f5143fec
+      internalID: 1629608307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_110
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb43605e9110c934ab2b13bd216e0434
+      internalID: -1779415638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_111
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf84ba02cc0c581478889b4bdd53c938
+      internalID: 1735975558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_112
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 899
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46320d87fbe26564c84da53b95abc042
+      internalID: -445463650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_113
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fbc2c9872db5548b5cda38b6af5b51
+      internalID: -51978471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_114
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b7093a95d265440bb1ad2f8cc1eb9b
+      internalID: 324829412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_115
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915c406cedd1e93488cd37c14e658d07
+      internalID: -1401751793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_116
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65e7eaa68ab68c458b6d1a14ba3ebbd
+      internalID: 1269601125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_117
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03142679812be9f4aafc1d50756a5eb2
+      internalID: 1887527213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_118
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1170acbb62206334994a4bfddae3d3f2
+      internalID: 1834450243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_119
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7f42ff26caacf44b79d1d7ccc6b557
+      internalID: -826463139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_120
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f4707b07d6d094e916635ca1f521d0
+      internalID: 637886875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_121
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2087b993bd0f23e41ac2d9d6a5bd193f
+      internalID: -709267290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_122
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b946a614d526e4f82e7b04e8d855c0
+      internalID: -428108273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_123
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a644f04f090f124581ed8702f56c2b3
+      internalID: 835892256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_124
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08269d0a54f5ad04c804618874eba246
+      internalID: 1537898094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_125
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfebba91b118f704e94325664b6298bd
+      internalID: 1486787397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_126
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b585dbc39c581e840b50b4c0fb0c0a4e
+      internalID: 365027369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_127
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 771
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995f7c2c72c7d2248851f4df0973c10f
+      internalID: 1366725466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_128
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9458d3106c86f49ab55662da71b509
+      internalID: -1391862803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_129
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c4f724e798c3642b3a2038fa10322a
+      internalID: 172348961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_130
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988e38a6bac5e1d4e878da90b2f86e15
+      internalID: -1321318909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_131
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80044f3fa5601bc4f84c8af3ffaed4e9
+      internalID: -1963836354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_132
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7f7eb822efd04408754cdffd5b2074
+      internalID: 836383316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_133
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b5edde4b2a47048878567bf277da16
+      internalID: -401234278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_134
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258b7d1fc61c59346bdc79d63f99936e
+      internalID: -676075477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_135
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebfe210608ba2646bcacaf7fe44f79e
+      internalID: -232799476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_136
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146735da5ee87054d8d00823bea7f814
+      internalID: -1103993942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_137
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7d993eddbfabf499816531afd60898
+      internalID: -68107912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_138
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf06b3fe59235041bda491d7433e107
+      internalID: -1096317521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_139
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdea359a1668ce34097133b51d9b9a1d
+      internalID: -88388561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_140
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32a123e17bddf844a2c9eb69b595d67
+      internalID: 262882643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_141
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c47fbe6c2c99ef459d5dedbaf406b3a
+      internalID: 1384473749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_142
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eaf4ae0418f04e4f9c979ee7acbe3d2
+      internalID: -1265128146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_143
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 643
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45d4a5a59356b642a5df08e955430bb
+      internalID: 1961136242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_144
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ed785c1eeba324186e9ebedae562f5
+      internalID: -949985294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_145
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d836d693e1956c045baf06d86e386fec
+      internalID: 808467328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_146
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a4dceb03cc70e46ba38b9c0131075d
+      internalID: -1726216328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_147
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d903805898c47a45964f5edbe082720
+      internalID: 2057379479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_148
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd3b0442a4d234409f5f03f69db9270
+      internalID: -1832355407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_149
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0a71e30a98c074c8dc517707c6f05d
+      internalID: -1213397316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_150
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aefe39ac2a1cfa45a55ac54124bb16e
+      internalID: -667171671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_151
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ddb39c7c88ced4cb67e0734435feec
+      internalID: -728045722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_152
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b4741218d6f5b44a47b73b71655ae9
+      internalID: -1862932092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_153
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65202f97f87b5ae43887c82943d3720c
+      internalID: 398959666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_154
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e757aa418f0cd458b9eab891e50373
+      internalID: 1937934295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_155
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b36d5546428cd478630039ed205fea
+      internalID: 869806784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_156
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c7892894b67ea45a4024103d824420
+      internalID: 1794985150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_157
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08eadb58477f33d4e8a3b864ee64fcb6
+      internalID: 1726834444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_158
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 515
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a5df5d0b81681469a265d72ab352b8
+      internalID: -169416277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_159
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402d2c5172b34124eb371ba34d857b62
+      internalID: -1091480991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_160
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abaac3aaa1bc9449980a3ff2e2fc09e
+      internalID: 1891022501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_161
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1676ef5cc02c42045ab6cc128a463218
+      internalID: 674005120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_162
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cc4e9e4d44dbb44abb5cec14cb608a
+      internalID: 2100200649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_163
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f04133eab25af41b26cff2bd49a9a5
+      internalID: -502770749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_164
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0286bcdf5038d6345ae2c12506ad12cc
+      internalID: -1438505452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_165
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cae951974460b44bff3695598feceb
+      internalID: 95975140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_166
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3fb368425631245a6161a0e9549b00
+      internalID: -1379695908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_167
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b4ba6cbeb7742439bdb659e8697b3e
+      internalID: -1686848420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_168
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e1a648726694245bfdefa58dfaf815
+      internalID: -786738676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_169
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc19a4961cdac944da2c1c52afd224fd
+      internalID: -376305883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_170
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9094141a68ce0f41bfe39f1cc59fbc6
+      internalID: -1199144372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_171
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ba1f246949e344c800d51e8c4a36c6
+      internalID: -251881452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_172
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 387
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6b9fcddc9f63c4fb7f7aaa93c48e2e
+      internalID: -1044526065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_173
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a09a03815b49bd4eb45dcf402cc0056
+      internalID: -1914602285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_174
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfc5666e76e4d841bff1b9f4550d366
+      internalID: 1844634796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_175
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a274270f4d9aa44ab182981ed4eb12
+      internalID: 372845054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_176
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ccc55848255bc40ab58fa0abcee8d5
+      internalID: -1149011809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_177
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b2fa1c287c59b4b8e96a4c109d99be
+      internalID: -390639039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_178
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b629f9349f9f14da59cabe33467a1b
+      internalID: 954316596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_179
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fb1035993dc4c48ba401046ccb5909
+      internalID: 870241671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_180
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7054d56424fa942806da3811d950ee
+      internalID: -1992731241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_181
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fbaa46ff04f7b40a04e2d761b6c196
+      internalID: -1384041666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_182
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 259
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ef37045ab6a734d9317ebb766518d6
+      internalID: 2106921568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_183
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ad01ee3d530ccd4aa843173475f7f11
+      internalID: -2090290903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_184
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca52e5887666a54d9dab476adec4d3b
+      internalID: 888366453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_185
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfe998851a92874699653b316597953
+      internalID: -1846839203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_186
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6791194e92ab30e449f541f785d5bbee
+      internalID: 1813074219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_187
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6886fb96659cadc4c80e142617abf842
+      internalID: 1181931477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_188
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d19f4407a8473e469cd9a989523a652
+      internalID: -396686491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_189
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f127824c520ff4688278ab49e413aa
+      internalID: -1943315807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_190
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422c04e6991515a42b220952db3fe2c4
+      internalID: -1737124062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-buildings_191
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 131
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d621a955399c7c64e9cd6c32a748c884
+      internalID: -1136220762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      the-big-gay_tileset-buildings_0: -1164504481
+      the-big-gay_tileset-buildings_1: 1493668283
+      the-big-gay_tileset-buildings_10: 56975635
+      the-big-gay_tileset-buildings_100: -551907208
+      the-big-gay_tileset-buildings_101: 1275547609
+      the-big-gay_tileset-buildings_102: -1061885096
+      the-big-gay_tileset-buildings_103: 1273432087
+      the-big-gay_tileset-buildings_104: 921747958
+      the-big-gay_tileset-buildings_105: 151301447
+      the-big-gay_tileset-buildings_106: 1821916098
+      the-big-gay_tileset-buildings_107: -716736907
+      the-big-gay_tileset-buildings_108: -1408584895
+      the-big-gay_tileset-buildings_109: 1629608307
+      the-big-gay_tileset-buildings_11: 889096208
+      the-big-gay_tileset-buildings_110: -1779415638
+      the-big-gay_tileset-buildings_111: 1735975558
+      the-big-gay_tileset-buildings_112: -445463650
+      the-big-gay_tileset-buildings_113: -51978471
+      the-big-gay_tileset-buildings_114: 324829412
+      the-big-gay_tileset-buildings_115: -1401751793
+      the-big-gay_tileset-buildings_116: 1269601125
+      the-big-gay_tileset-buildings_117: 1887527213
+      the-big-gay_tileset-buildings_118: 1834450243
+      the-big-gay_tileset-buildings_119: -826463139
+      the-big-gay_tileset-buildings_12: -1864341348
+      the-big-gay_tileset-buildings_120: 637886875
+      the-big-gay_tileset-buildings_121: -709267290
+      the-big-gay_tileset-buildings_122: -428108273
+      the-big-gay_tileset-buildings_123: 835892256
+      the-big-gay_tileset-buildings_124: 1537898094
+      the-big-gay_tileset-buildings_125: 1486787397
+      the-big-gay_tileset-buildings_126: 365027369
+      the-big-gay_tileset-buildings_127: 1366725466
+      the-big-gay_tileset-buildings_128: -1391862803
+      the-big-gay_tileset-buildings_129: 172348961
+      the-big-gay_tileset-buildings_13: -2146209403
+      the-big-gay_tileset-buildings_130: -1321318909
+      the-big-gay_tileset-buildings_131: -1963836354
+      the-big-gay_tileset-buildings_132: 836383316
+      the-big-gay_tileset-buildings_133: -401234278
+      the-big-gay_tileset-buildings_134: -676075477
+      the-big-gay_tileset-buildings_135: -232799476
+      the-big-gay_tileset-buildings_136: -1103993942
+      the-big-gay_tileset-buildings_137: -68107912
+      the-big-gay_tileset-buildings_138: -1096317521
+      the-big-gay_tileset-buildings_139: -88388561
+      the-big-gay_tileset-buildings_14: 782383844
+      the-big-gay_tileset-buildings_140: 262882643
+      the-big-gay_tileset-buildings_141: 1384473749
+      the-big-gay_tileset-buildings_142: -1265128146
+      the-big-gay_tileset-buildings_143: 1961136242
+      the-big-gay_tileset-buildings_144: -949985294
+      the-big-gay_tileset-buildings_145: 808467328
+      the-big-gay_tileset-buildings_146: -1726216328
+      the-big-gay_tileset-buildings_147: 2057379479
+      the-big-gay_tileset-buildings_148: -1832355407
+      the-big-gay_tileset-buildings_149: -1213397316
+      the-big-gay_tileset-buildings_15: 1319690029
+      the-big-gay_tileset-buildings_150: -667171671
+      the-big-gay_tileset-buildings_151: -728045722
+      the-big-gay_tileset-buildings_152: -1862932092
+      the-big-gay_tileset-buildings_153: 398959666
+      the-big-gay_tileset-buildings_154: 1937934295
+      the-big-gay_tileset-buildings_155: 869806784
+      the-big-gay_tileset-buildings_156: 1794985150
+      the-big-gay_tileset-buildings_157: 1726834444
+      the-big-gay_tileset-buildings_158: -169416277
+      the-big-gay_tileset-buildings_159: -1091480991
+      the-big-gay_tileset-buildings_16: 2012903820
+      the-big-gay_tileset-buildings_160: 1891022501
+      the-big-gay_tileset-buildings_161: 674005120
+      the-big-gay_tileset-buildings_162: 2100200649
+      the-big-gay_tileset-buildings_163: -502770749
+      the-big-gay_tileset-buildings_164: -1438505452
+      the-big-gay_tileset-buildings_165: 95975140
+      the-big-gay_tileset-buildings_166: -1379695908
+      the-big-gay_tileset-buildings_167: -1686848420
+      the-big-gay_tileset-buildings_168: -786738676
+      the-big-gay_tileset-buildings_169: -376305883
+      the-big-gay_tileset-buildings_17: -540320608
+      the-big-gay_tileset-buildings_170: -1199144372
+      the-big-gay_tileset-buildings_171: -251881452
+      the-big-gay_tileset-buildings_172: -1044526065
+      the-big-gay_tileset-buildings_173: -1914602285
+      the-big-gay_tileset-buildings_174: 1844634796
+      the-big-gay_tileset-buildings_175: 372845054
+      the-big-gay_tileset-buildings_176: -1149011809
+      the-big-gay_tileset-buildings_177: -390639039
+      the-big-gay_tileset-buildings_178: 954316596
+      the-big-gay_tileset-buildings_179: 870241671
+      the-big-gay_tileset-buildings_18: 602979152
+      the-big-gay_tileset-buildings_180: -1992731241
+      the-big-gay_tileset-buildings_181: -1384041666
+      the-big-gay_tileset-buildings_182: 2106921568
+      the-big-gay_tileset-buildings_183: -2090290903
+      the-big-gay_tileset-buildings_184: 888366453
+      the-big-gay_tileset-buildings_185: -1846839203
+      the-big-gay_tileset-buildings_186: 1813074219
+      the-big-gay_tileset-buildings_187: 1181931477
+      the-big-gay_tileset-buildings_188: -396686491
+      the-big-gay_tileset-buildings_189: -1943315807
+      the-big-gay_tileset-buildings_19: -103031312
+      the-big-gay_tileset-buildings_190: -1737124062
+      the-big-gay_tileset-buildings_191: -1136220762
+      the-big-gay_tileset-buildings_2: 508992463
+      the-big-gay_tileset-buildings_20: -2027104570
+      the-big-gay_tileset-buildings_21: 391297774
+      the-big-gay_tileset-buildings_22: 463431403
+      the-big-gay_tileset-buildings_23: 962500690
+      the-big-gay_tileset-buildings_24: -214718359
+      the-big-gay_tileset-buildings_25: -1358378534
+      the-big-gay_tileset-buildings_26: 1080437665
+      the-big-gay_tileset-buildings_27: 1874188987
+      the-big-gay_tileset-buildings_28: 1629197643
+      the-big-gay_tileset-buildings_29: -588515771
+      the-big-gay_tileset-buildings_3: 845441539
+      the-big-gay_tileset-buildings_30: -1500994053
+      the-big-gay_tileset-buildings_31: -699794253
+      the-big-gay_tileset-buildings_32: 737592884
+      the-big-gay_tileset-buildings_33: -314283141
+      the-big-gay_tileset-buildings_34: -1698703725
+      the-big-gay_tileset-buildings_35: -1681732621
+      the-big-gay_tileset-buildings_36: -776862004
+      the-big-gay_tileset-buildings_37: -401177898
+      the-big-gay_tileset-buildings_38: -810428364
+      the-big-gay_tileset-buildings_39: 1910392116
+      the-big-gay_tileset-buildings_4: -519703215
+      the-big-gay_tileset-buildings_40: -1843294024
+      the-big-gay_tileset-buildings_41: -2099115767
+      the-big-gay_tileset-buildings_42: 2090286634
+      the-big-gay_tileset-buildings_43: -369663275
+      the-big-gay_tileset-buildings_44: -1831841181
+      the-big-gay_tileset-buildings_45: 394446971
+      the-big-gay_tileset-buildings_46: -1951809822
+      the-big-gay_tileset-buildings_47: -1584772232
+      the-big-gay_tileset-buildings_48: 270952419
+      the-big-gay_tileset-buildings_49: 289004409
+      the-big-gay_tileset-buildings_5: -731102491
+      the-big-gay_tileset-buildings_50: -2050802893
+      the-big-gay_tileset-buildings_51: -768108376
+      the-big-gay_tileset-buildings_52: -12397263
+      the-big-gay_tileset-buildings_53: -1249091791
+      the-big-gay_tileset-buildings_54: 1772511645
+      the-big-gay_tileset-buildings_55: 788355488
+      the-big-gay_tileset-buildings_56: 1686772976
+      the-big-gay_tileset-buildings_57: 1885849382
+      the-big-gay_tileset-buildings_58: -912458208
+      the-big-gay_tileset-buildings_59: 500450842
+      the-big-gay_tileset-buildings_6: -929021618
+      the-big-gay_tileset-buildings_60: -1884816672
+      the-big-gay_tileset-buildings_61: 978109908
+      the-big-gay_tileset-buildings_62: -809090460
+      the-big-gay_tileset-buildings_63: 1110160709
+      the-big-gay_tileset-buildings_64: 758069828
+      the-big-gay_tileset-buildings_65: -1452866378
+      the-big-gay_tileset-buildings_66: 1785902050
+      the-big-gay_tileset-buildings_67: -429675177
+      the-big-gay_tileset-buildings_68: -79294493
+      the-big-gay_tileset-buildings_69: -1870925340
+      the-big-gay_tileset-buildings_7: 728155081
+      the-big-gay_tileset-buildings_70: -1164910406
+      the-big-gay_tileset-buildings_71: 419980167
+      the-big-gay_tileset-buildings_72: -1655597080
+      the-big-gay_tileset-buildings_73: 1793349317
+      the-big-gay_tileset-buildings_74: 1794754477
+      the-big-gay_tileset-buildings_75: -1542900246
+      the-big-gay_tileset-buildings_76: 1872360511
+      the-big-gay_tileset-buildings_77: 1923820350
+      the-big-gay_tileset-buildings_78: 2133109181
+      the-big-gay_tileset-buildings_79: 171482409
+      the-big-gay_tileset-buildings_8: -1146244180
+      the-big-gay_tileset-buildings_80: -990342028
+      the-big-gay_tileset-buildings_81: -428494926
+      the-big-gay_tileset-buildings_82: -1935088226
+      the-big-gay_tileset-buildings_83: -1857372943
+      the-big-gay_tileset-buildings_84: -966970523
+      the-big-gay_tileset-buildings_85: 1711923791
+      the-big-gay_tileset-buildings_86: -457640650
+      the-big-gay_tileset-buildings_87: -1869526824
+      the-big-gay_tileset-buildings_88: 1281152276
+      the-big-gay_tileset-buildings_89: 1855580059
+      the-big-gay_tileset-buildings_9: 1733941519
+      the-big-gay_tileset-buildings_90: -1765641273
+      the-big-gay_tileset-buildings_91: 165020289
+      the-big-gay_tileset-buildings_92: 186723187
+      the-big-gay_tileset-buildings_93: -290030739
+      the-big-gay_tileset-buildings_94: 206674715
+      the-big-gay_tileset-buildings_95: -1220508485
+      the-big-gay_tileset-buildings_96: -1482655785
+      the-big-gay_tileset-buildings_97: -2108594940
+      the-big-gay_tileset-buildings_98: -167745907
+      the-big-gay_tileset-buildings_99: -1785415209
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
