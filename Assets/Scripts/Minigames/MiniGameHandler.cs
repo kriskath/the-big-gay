@@ -127,7 +127,7 @@ public class MiniGameHandler : MonoBehaviour
     private void ContinueFight(){
         currentMiniGame = null;
         battleUI.inGame = false;
-        battleUI.NPCSpeak(battleOnContinue);
+        //battleUI.NPCSpeak(battleOnContinue);
     }
 
  
