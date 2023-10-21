@@ -236,6 +236,7 @@ MonoBehaviour:
   sliceAreaRenderer: {fileID: 5034831437812024495}
   playerSlicerRenderer: {fileID: 4993408194470066227}
   hitRegionRenderer: {fileID: 6018625490936687087}
+  triesText: {fileID: 0}
   precisionSprite: {fileID: 21300000, guid: 88ef81e9105ca1c4eb52f2c50ded2764, type: 3}
   perfectSprite: {fileID: 21300000, guid: 762406b665eefdc46b262fbee148dd4b, type: 3}
   missedSprite: {fileID: 21300000, guid: 743dbef49ee1e174ca9a3df35ac44bd5, type: 3}
