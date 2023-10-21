@@ -25,12 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56176038936258502}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7966892707269975736}
+  m_Father: {fileID: 1977784324389543986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4993408194470066227
 SpriteRenderer:
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.9499275, b: 0.3160377, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 88ef81e9105ca1c4eb52f2c50ded2764, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 7966892707269975736}
   - component: {fileID: 5511819887540550304}
   m_Layer: 0
-  m_Name: PercisionMinigame
+  m_Name: PrecisionMinigame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,9 +114,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8583965885150001024}
-  - {fileID: 5609040354447298944}
-  - {fileID: 3303025353125628746}
+  - {fileID: 1977784324389543986}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5511819887540550304
@@ -131,28 +129,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20acf6e824aab1fd296fddf49a028a34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onPlayerSuccessfulHit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2707689902159290220}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onPlayerMissedHit:
-    m_PersistentCalls:
-      m_Calls: []
-  sliceArea: {fileID: 8071060193538565405}
-  playerSlicer: {fileID: 56176038936258502}
-  hitRegion: {fileID: 5441262955015958071}
+  minigameUI: {fileID: 3812456577336005001}
+  sliceAreaRenderer: {fileID: 5034831437812024495}
+  playerSlicerRenderer: {fileID: 4993408194470066227}
+  hitRegionRenderer: {fileID: 6018625490936687087}
+  percisionSprite: {fileID: 21300000, guid: 88ef81e9105ca1c4eb52f2c50ded2764, type: 3}
+  perfectSprite: {fileID: 21300000, guid: 762406b665eefdc46b262fbee148dd4b, type: 3}
+  missedSprite: {fileID: 21300000, guid: 743dbef49ee1e174ca9a3df35ac44bd5, type: 3}
+  timeToWait: 2
   slicerMovementSpeed: 10
+  slicerXConfig: 0
+  slicerYConfig: -0.1
+  sliceAreaXConfig: 0
+  sliceAreaYConfig: -0.1
+--- !u!1 &3812456577336005001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1977784324389543986}
+  m_Layer: 0
+  m_Name: MinigameUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1977784324389543986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3812456577336005001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8583965885150001024}
+  - {fileID: 5609040354447298944}
+  - {fileID: 3303025353125628746}
+  m_Father: {fileID: 7966892707269975736}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5441262955015958071
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,12 +201,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5441262955015958071}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.048, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.96173257, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7966892707269975736}
+  m_Father: {fileID: 1977784324389543986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6018625490936687087
 SpriteRenderer:
@@ -226,8 +249,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.021330357, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a53c75e43a56c344c91c1e0c0787cc26, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -262,12 +285,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8071060193538565405}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.04, z: 0}
+  m_LocalScale: {x: 0.75, y: 1.2125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7966892707269975736}
+  m_Father: {fileID: 1977784324389543986}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5034831437812024495
 SpriteRenderer:
@@ -310,8 +333,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f9b09bf000d2fbe4b933ae454921e595, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
