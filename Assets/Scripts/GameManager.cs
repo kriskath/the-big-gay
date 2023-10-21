@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
 	
 	//Positional Data
 	private Vector3 lastPlayerPositionInTown;
+	private int currentScene = 0;
 
 	
 	private void Awake()
@@ -142,8 +143,12 @@ public class GameManager : MonoBehaviour
 		}
 		
 		blackoutScreen.gameObject.SetActive(false);
+		currentScene = toBuildIndex;
 	}
 
+	public int GetCurrentScene(){
+		return currentScene;
+	}
 
 	public void LoadMainMenuScene()
 	{

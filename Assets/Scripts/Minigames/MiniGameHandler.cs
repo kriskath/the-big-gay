@@ -60,6 +60,7 @@ public class MiniGameHandler : MonoBehaviour
                 currentMiniGame = precisionGame; 
                 break;
             case MiniGameType.Fight:
+                battleUI.audioManager.PlayToBeHitSFX();
                 battleUI.NPCSpeak(battleOnFight);
                 battleUI.UpdateHP(-10);
                 currentMiniGame = null;
@@ -99,6 +100,7 @@ public class MiniGameHandler : MonoBehaviour
    
     private void OnMiniGameCompleted()
     {
+        battleUI.audioManager.PlayRightSFX();
         phases --;
         if (phases == 0){
             battleUI.NPCSpeak(battleOnWin);
@@ -115,6 +117,7 @@ public class MiniGameHandler : MonoBehaviour
   
     private void OnMiniGameFailed()
     {
+        battleUI.audioManager.PlayWrongSFX();
         battleUI.NPCSpeak(battleOnMiss);
         Debug.Log("Game Failed");
         // Decrease morale here
