@@ -3,6 +3,7 @@ using UnityEngine.Serialization;
 using UnityEngine.Events;
 using System;
 using System.Collections;
+using TMPro;
 
 public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
 {
@@ -20,6 +21,8 @@ public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
     private SpriteRenderer playerSlicerRenderer;
     [SerializeField] 
     private SpriteRenderer hitRegionRenderer;
+    [SerializeField] 
+    public TextMeshProUGUI triesText; 
 
     [FormerlySerializedAs("percisionSprite")]
     [Header("Slicer UI Assets")] 
@@ -60,10 +63,12 @@ public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
     //HitRegion
     private float hitRegionHalfLen;
 
-    private bool bPaused = false;
+    private bool bPaused = true;
+    private int tries = 3; //todo add ui for this?
 
     void Update()
     {
+        if (bPaused) return;
         UpdateSlicerLocation();
 
         CheckPlayerInput();
@@ -82,14 +87,19 @@ public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
             }
             else
             {
-                FailMiniGame();
+                if (tries > 1){
+                    tries--;
+                    triesText.text = "Tries: " + tries;
+                    StartCoroutine(FailedCountdown());                
+                }
+                else 
+                    FailMiniGame();
             }
         }
     }
     
     private void UpdateSlicerLocation()
     {
-        if (bPaused) return;
         
         //if we extend passed area, switch dir
         if (playerSlicerRenderer.transform.position.x + playerSlicerHalfLen > sliceAreaMax.x)
@@ -126,9 +136,11 @@ public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
 
     public void StartMiniGame()
     {
+        Debug.Log("[Precision minigame] started");
         //UI should be hidden, so unhide it
         minigameUI.SetActive(true);
         
+        triesText.text = "Tries: " + tries;
         //Initialize data and start game
         //SliceArea
         sliceAreaMin = sliceAreaRenderer.bounds.min;
@@ -176,25 +188,23 @@ public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
         playerSlicerRenderer.sprite = perfectSprite;
         
         float time = 0f;
-        while (time < timeToWait)
+        while (time < 0.3)
         {
             time += Time.deltaTime;
             yield return null;
         }
 
         playerSlicerRenderer.sprite = precisionSprite;
-        
-        bPaused = false;
         minigameUI.SetActive(false);
     }
     
-
+ 
     public void FailMiniGame()
     {
         MiniGameFailed?.Invoke();
         
         //Play failed stuff, then retry
-        StartCoroutine(FailedCountdown());
+        StartCoroutine(FinishedGameCountdown());
     }
     
     private IEnumerator FailedCountdown()
@@ -205,7 +215,7 @@ public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
         playerSlicerRenderer.sprite = missedSprite;
         
         float time = 0f;
-        while (time < timeToWait)
+        while (time < 0.3)
         {
             time += Time.deltaTime;
             yield return null;

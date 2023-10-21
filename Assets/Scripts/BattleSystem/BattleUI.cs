@@ -22,8 +22,7 @@ public class BattleUI : MonoBehaviour
 
     public bool inGame = false;
 
-    public AudioSource hoverSound;
-    public AudioSource selectSound;
+    public AudioManager audioManager;
 
     private void OnEnable()
     {
@@ -33,6 +32,7 @@ public class BattleUI : MonoBehaviour
     private void Start()
     {
         hpSlider.value = hp;
+        audioManager.PlayBattleTheme();
     }
 
     private void OnDisable()
@@ -61,18 +61,18 @@ public class BattleUI : MonoBehaviour
 
         if (Input.GetKeyDown("e") || Input.GetKeyDown("enter"))
         {
-            selectSound.Play();
+            audioManager.PlaySelectSFX();
             OnSwitchGame?.Invoke((buttons[menuIndex].gameType));
         }
 
         if (Input.GetKeyDown("left") || Input.GetKeyDown("a"))
         {
-            hoverSound.Play();
+            audioManager.PlayHoverSFX();
             menuIndex = (menuIndex + 1) % (menuIndexMax + 1);
         }
         else if (Input.GetKeyDown("right") || Input.GetKeyDown("d"))
         {
-            hoverSound.Play();
+            audioManager.PlayHoverSFX();
             menuIndex = (menuIndex - 1 + menuIndexMax + 1) % (menuIndexMax + 1);
         }
     }

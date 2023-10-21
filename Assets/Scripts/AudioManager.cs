@@ -51,38 +51,50 @@ public class AudioManager : MonoBehaviour
 
     public void PlayStartGameSFX()
     {
-        bgmAudioSource.Stop();
-        bgmAudioSource.clip = startGameSFX;
-        bgmAudioSource.Play();
+        sfxAudioSource.Stop();
+        sfxAudioSource.clip = startGameSFX;
+        sfxAudioSource.Play();
     }
     public void PlayRightSFX()
     {
-        bgmAudioSource.Stop();
-        bgmAudioSource.clip = rightSFX;
-        bgmAudioSource.Play();
+        sfxAudioSource.Stop();
+        sfxAudioSource.clip = rightSFX;
+        sfxAudioSource.Play();
     }
     public void PlayWrongSFX()
     {
-        bgmAudioSource.Stop();
-        bgmAudioSource.clip = wrongSFX;
-        bgmAudioSource.Play();
+        sfxAudioSource.Stop();
+        sfxAudioSource.clip = wrongSFX;
+        sfxAudioSource.Play();
     }
     public void PlayToBeHitSFX()
     {
-        bgmAudioSource.Stop();
-        bgmAudioSource.clip = toBeHitSFX;
-        bgmAudioSource.Play();
+        sfxAudioSource.Stop();
+        sfxAudioSource.clip = toBeHitSFX;
+        sfxAudioSource.Play();
     }
     public void PlayToHitSFX()
     {
-        bgmAudioSource.Stop();
-        bgmAudioSource.clip = toHitSFX;
-        bgmAudioSource.Play();
+        sfxAudioSource.Stop();
+        sfxAudioSource.clip = toHitSFX;
+        sfxAudioSource.Play();
     }
     public void PlayWaitingSFX()
     {
-        bgmAudioSource.Stop();
-        bgmAudioSource.clip = waitingSFX;
-        bgmAudioSource.Play();
+        sfxAudioSource.Stop();
+        sfxAudioSource.clip = waitingSFX;
+        sfxAudioSource.Play();
+    }
+    public void PlayHoverSFX()
+    {
+        sfxAudioSource.Stop();
+        sfxAudioSource.clip = onButtonHovered;
+        sfxAudioSource.Play();
+    }
+        public void PlaySelectSFX()
+    {
+        sfxAudioSource.Stop();
+        sfxAudioSource.clip = onButtonClicked;
+        sfxAudioSource.Play();
     }
 }

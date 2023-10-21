@@ -8,6 +8,7 @@ public class MiniGameHandler : MonoBehaviour
 
     // Public variables for minigame handlers.
     public ButtonMashingGame buttonMashingGame;
+    public PrecisionMinigameHandler precisionGame;
 
     public BattleUI battleUI;
 
@@ -50,12 +51,13 @@ public class MiniGameHandler : MonoBehaviour
         switch (gameType)
         {
             case MiniGameType.ButtonMashing:
-                battleUI.NPCSpeak(battleOnFight); // need to change this and get one for starting the game
+                //battleUI.NPCSpeak(battleOnFight); 
                 currentMiniGame = buttonMashingGame;
                 break;
             case MiniGameType.Precision:
-                battleUI.NPCSpeak(battleOnFight);
-                currentMiniGame = buttonMashingGame; // need to change this and get one for starting the game
+                //battleUI.NPCSpeak(battleOnFight);
+                Debug.Log("precision");
+                currentMiniGame = precisionGame; 
                 break;
             case MiniGameType.Fight:
                 battleUI.NPCSpeak(battleOnFight);
@@ -87,6 +89,7 @@ public class MiniGameHandler : MonoBehaviour
 
         if (currentMiniGame != null)
         {
+            Debug.Log("not null");
             battleUI.inGame = true;
             battleUI.HideDialogueBubbles();
             currentMiniGame.MiniGameCompleted += OnMiniGameCompleted;
@@ -100,7 +103,7 @@ public class MiniGameHandler : MonoBehaviour
     {
         phases --;
         if (phases == 0){
-
+            battleUI.NPCSpeak(battleOnWin);
             return;
         }
         battleUI.NPCSpeak(battleOnWinMinigame);
