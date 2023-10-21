@@ -1,9 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class BattleButton
+public class BattleButtons
 {
     public GameObject instance;
 
@@ -11,5 +11,5 @@ public class BattleButton
 
     public Sprite spriteInactive;
 
-    public Context context;
+    public MiniGameType gameType;
 }

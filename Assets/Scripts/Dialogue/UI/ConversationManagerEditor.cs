@@ -18,6 +18,7 @@ namespace DialogueEditor
         SerializedProperty BackgroundImageProperty;
         SerializedProperty BackgroundImageSlicedProperty;
         SerializedProperty OptionImageProperty;
+        SerializedProperty OptionImagePropertySelected;
         SerializedProperty OptionImageSlicedProperty;
         SerializedProperty ScrollTextProperty;
         SerializedProperty ScrollTextSpeedProperty;
@@ -28,6 +29,7 @@ namespace DialogueEditor
             BackgroundImageProperty = serializedObject.FindProperty("BackgroundImage");
             BackgroundImageSlicedProperty = serializedObject.FindProperty("BackgroundImageSliced");
             OptionImageProperty = serializedObject.FindProperty("OptionImage");
+            OptionImagePropertySelected = serializedObject.FindProperty("OptionImageSelected");
             OptionImageSlicedProperty = serializedObject.FindProperty("OptionImageSliced");
             ScrollTextProperty = serializedObject.FindProperty("ScrollText");
             ScrollTextSpeedProperty = serializedObject.FindProperty("ScrollSpeed");
@@ -56,6 +58,7 @@ namespace DialogueEditor
             // Option image
             GUILayout.Label("Dialogue Image Options", EditorStyles.boldLabel);
             EditorGUILayout.PropertyField(OptionImageProperty);
+            EditorGUILayout.PropertyField(OptionImagePropertySelected);
             EditorGUILayout.PropertyField(OptionImageSlicedProperty);
             EditorGUILayout.Space();
 
@@ -140,6 +143,7 @@ namespace DialogueEditor
             Rect optionTextRect = new Rect(optionRect);
             optionTextRect.x += optionRect.width * 0.4f;
             optionTextRect.y += OPTION_TEXT_BUF_Y;
+            
             if (t.OptionImage == null)
             {
                 EditorGUI.DrawRect(optionRect, Color.black);
