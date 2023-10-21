@@ -11,11 +11,21 @@ public class MiniGameHandler : MonoBehaviour
 
     public BattleUI battleUI;
 
-    public NPCConversation battleStart;
-    public NPCConversation battleNoFight;
+    public NPCConversation battleOnStart;
+    public NPCConversation battleOnWinMinigame;
+    public NPCConversation battleOnMiss;
+    public NPCConversation battleOnFight;
+    public NPCConversation battleOnWin;
+    public NPCConversation battleOnGameOver;
+    public NPCConversation battleOnContinue;
+    public NPCConversation battleOnDefend;
+    public NPCConversation battleOnRun;
+    
+    private int tries = 3;
+    private int phases = 3;
 
     private void Start(){
-        battleUI.NPCSpeak(battleStart);
+        battleUI.NPCSpeak(battleOnStart);
     }
 
     private void OnEnable()
@@ -27,12 +37,6 @@ public class MiniGameHandler : MonoBehaviour
     {
         BattleUI.OnSwitchGame -= SwitchToMiniGame; 
     }
-
-
-    // Unfortunately have to make these so the dialogue system calls them
-    //public void StartButtonMasher (){
-   //     SwitchToMiniGame(MiniGameType.ButtonMashing);
-    //}    
 
     public void SwitchToMiniGame(MiniGameType gameType)
     {
@@ -46,20 +50,24 @@ public class MiniGameHandler : MonoBehaviour
         switch (gameType)
         {
             case MiniGameType.ButtonMashing:
+                battleUI.NPCSpeak(battleOnFight); // need to change this and get one for starting the game
                 currentMiniGame = buttonMashingGame;
                 break;
+            case MiniGameType.Precision:
+                battleUI.NPCSpeak(battleOnFight);
+                currentMiniGame = buttonMashingGame; // need to change this and get one for starting the game
+                break;
             case MiniGameType.Fight:
-                battleUI.AddCompanionButton();
-                battleUI.NPCSpeak(battleNoFight);
+                battleUI.NPCSpeak(battleOnFight);
                 battleUI.UpdateHP(-10);
                 currentMiniGame = null;
                 break;
             case MiniGameType.Defend:
-                battleUI.NPCSpeak(battleStart);
+                battleUI.NPCSpeak(battleOnDefend);
                 currentMiniGame = null;
                 break;
             case MiniGameType.Run:
-                battleUI.NPCSpeak(battleStart);
+                battleUI.NPCSpeak(battleOnRun);
                 currentMiniGame = null;
                 break;
             case MiniGameType.NoGame:
@@ -68,6 +76,13 @@ public class MiniGameHandler : MonoBehaviour
             default:
                 Debug.LogWarning("[MiniGameHandler] Minigame type not recognized.");
                 break;
+        }
+
+        if (tries > 0){
+            tries--;
+        }
+        if (tries == 0){
+            battleUI.AddCompanionButton();
         }
 
         if (currentMiniGame != null)
@@ -83,6 +98,12 @@ public class MiniGameHandler : MonoBehaviour
    
     private void OnMiniGameCompleted()
     {
+        phases --;
+        if (phases == 0){
+
+            return;
+        }
+        battleUI.NPCSpeak(battleOnWinMinigame);
         Debug.Log("Completed Game");
         currentMiniGame.MiniGameCompleted -= OnMiniGameCompleted;
         currentMiniGame.MiniGameFailed -= OnMiniGameFailed;
@@ -93,6 +114,7 @@ public class MiniGameHandler : MonoBehaviour
   
     private void OnMiniGameFailed()
     {
+        battleUI.NPCSpeak(battleOnMiss);
         Debug.Log("Game Failed");
         // Decrease morale here
         currentMiniGame.MiniGameCompleted -= OnMiniGameCompleted;
@@ -104,7 +126,7 @@ public class MiniGameHandler : MonoBehaviour
     private void ContinueFight(){
         currentMiniGame = null;
         battleUI.inGame = false;
-        battleUI.NPCSpeak(battleStart);
+        battleUI.NPCSpeak(battleOnContinue);
     }
 
  
