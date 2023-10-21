@@ -26,6 +26,7 @@ namespace DialogueEditor
         // UI Elements
         [SerializeField] private TMPro.TextMeshProUGUI TextMesh = null;
         [SerializeField] private Image OptionBackgroundImage = null;
+        [SerializeField] private Image OptionBackgroundImageSelected = null;
         private RectTransform m_rect;
 
         // Node data
@@ -171,6 +172,10 @@ namespace DialogueEditor
             TextMesh.color = c_text;
         }
 
+        public void SetColorFont (Color col){
+             TextMesh.color = col;
+        }
+
         public void SetupButton(eButtonType buttonType, ConversationNode node, TMPro.TMP_FontAsset continueFont = null, TMPro.TMP_FontAsset endFont = null)
         {
             m_buttonType = buttonType;
@@ -180,7 +185,7 @@ namespace DialogueEditor
             {
                 case eButtonType.Option:
                     {
-                        TextMesh.text = node.Text;
+                        TextMesh.text = "<b>" + node.Text + "</b>";
                         TextMesh.font = node.TMPFont;
                     }
                     break;
