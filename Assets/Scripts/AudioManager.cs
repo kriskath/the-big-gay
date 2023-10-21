@@ -29,6 +29,11 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip toHitSFX;
     [SerializeField] private AudioClip waitingSFX;
 
+    [Header("Voices")]
+    [SerializeField] private AudioSource voxAudioSource;
+    [SerializeField] private AudioClip characterSpeaking;
+
+
 
     public void PlayMainMenuTheme()
     {
@@ -96,5 +101,17 @@ public class AudioManager : MonoBehaviour
         sfxAudioSource.Stop();
         sfxAudioSource.clip = onButtonClicked;
         sfxAudioSource.Play();
+    }
+
+     public void PlayCharacterSpeaking (float pitch)
+    {
+        voxAudioSource.pitch = pitch;
+        voxAudioSource.Stop();
+        voxAudioSource.clip = characterSpeaking;
+        voxAudioSource.Play();
+    }
+
+    public void StopCharacterSpeaking(){
+        voxAudioSource.Stop();
     }
 }

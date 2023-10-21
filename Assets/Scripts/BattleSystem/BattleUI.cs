@@ -24,6 +24,8 @@ public class BattleUI : MonoBehaviour
 
     public AudioManager audioManager;
 
+    public float companionPitch;
+
     private void OnEnable()
     {
         BattleMManager.OnNameChecked += HandleNameChecked;
@@ -31,6 +33,7 @@ public class BattleUI : MonoBehaviour
 
     private void Start()
     {
+        
         hpSlider.value = hp;
         audioManager.PlayBattleTheme();
     }
@@ -41,6 +44,10 @@ public class BattleUI : MonoBehaviour
     }
     public void Update()
     {
+
+        if (BattleMManager.Instance.IsIdle()){
+            audioManager.StopCharacterSpeaking();
+        }
         if (gameOver == false){
             HandleInput();
             UpdateMenu();
@@ -116,12 +123,15 @@ public class BattleUI : MonoBehaviour
             // Toggle on the bubble for the hero
             dialogueBubbles[0].SetActive(true);
             dialogueBubbles[1].SetActive(false);
+            audioManager.PlayCharacterSpeaking(1f);
         }
         else
         {
             // Toggle on the bubble for the other guy
+            audioManager.PlayCharacterSpeaking(companionPitch);
             dialogueBubbles[0].SetActive(false);
             dialogueBubbles[1].SetActive(true);
+            
         }
     }
     
