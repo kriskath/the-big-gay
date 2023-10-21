@@ -7,23 +7,40 @@ using DialogueEditor;
 
 public class BattleUI : MonoBehaviour
 {
-    public GameObject[] dialogueBubbles;
-    public Slider hpSlider;
-    public static float hp = 100;
+        // Group: Dialogue UI
+    [SerializeField] 
+    private GameObject[] dialogueBubbles;
+
+    // Group: Health UI
+    [SerializeField] 
+    private Slider hpSlider;
+    [SerializeField] 
+    private float hp = 100;
+    [SerializeField] 
     private bool gameOver = false;
 
-    public List<BattleButtons> buttons = new List<BattleButtons>();
-    public BattleButtons companionAction;
-
+    // Group: Battle Buttons
+    [SerializeField] 
+    private List<BattleButtons> buttons = new List<BattleButtons>();
+    [SerializeField] 
+    private BattleButtons companionAction;
+    [SerializeField] 
     private int menuIndex = 0;
-    private int menuIndexMax = 2; 
+    [SerializeField] 
+    private int menuIndexMax = 2;
 
+    // Group: Events
+    [SerializeField] 
     public static event Action<MiniGameType> OnSwitchGame;
 
+    // Group: Game State
+    [SerializeField] 
     public bool inGame = false;
 
+    // Group: Audio
+    [SerializeField] 
     public AudioManager audioManager;
-
+    [SerializeField] 
     public float companionPitch;
 
     private void OnEnable()
@@ -33,9 +50,11 @@ public class BattleUI : MonoBehaviour
 
     private void Start()
     {
-        
+        if (AudioManager.Instance == null){
+            Debug.Log("what??");
+        }
+        audioManager = AudioManager.Instance;
         hpSlider.value = hp;
-        audioManager.PlayBattleTheme();
     }
 
     private void OnDisable()

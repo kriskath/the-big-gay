@@ -43,7 +43,6 @@ namespace DialogueEditor
         private TMPro.TextMeshProUGUI DialogueText;
         public TMPro.TextMeshProUGUI HeroDialogueText;
         public TMPro.TextMeshProUGUI CompanionDialogueText;
-        public AudioSource AudioPlayer;
 
         private float m_elapsedScrollTime;
         private int m_scrollIndex;

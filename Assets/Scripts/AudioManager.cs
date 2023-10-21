@@ -33,8 +33,20 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource voxAudioSource;
     [SerializeField] private AudioClip characterSpeaking;
 
-
-
+    private void Awake()
+	{
+		if (_instance != null && _instance != this)
+		{
+			Destroy(gameObject);
+		}
+		else
+		{
+			_instance = this;
+			
+			//Make persistent
+			DontDestroyOnLoad(gameObject);
+		}
+	}
     public void PlayMainMenuTheme()
     {
         bgmAudioSource.Stop();
