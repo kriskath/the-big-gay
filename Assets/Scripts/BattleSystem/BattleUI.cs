@@ -22,6 +22,9 @@ public class BattleUI : MonoBehaviour
 
     public bool inGame = false;
 
+    public AudioSource hoverSound;
+    public AudioSource selectSound;
+
     private void OnEnable()
     {
         BattleMManager.OnNameChecked += HandleNameChecked;
@@ -58,15 +61,18 @@ public class BattleUI : MonoBehaviour
 
         if (Input.GetKeyDown("e") || Input.GetKeyDown("enter"))
         {
+            selectSound.Play();
             OnSwitchGame?.Invoke((buttons[menuIndex].gameType));
         }
 
         if (Input.GetKeyDown("left") || Input.GetKeyDown("a"))
         {
+            hoverSound.Play();
             menuIndex = (menuIndex + 1) % (menuIndexMax + 1);
         }
         else if (Input.GetKeyDown("right") || Input.GetKeyDown("d"))
         {
+            hoverSound.Play();
             menuIndex = (menuIndex - 1 + menuIndexMax + 1) % (menuIndexMax + 1);
         }
     }
