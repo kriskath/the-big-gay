@@ -1,0 +1,3229 @@
+fileFormatVersion: 2
+guid: f0a1755ddf19b264ba23b05357b263c0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a4fb4b8f864ee498a4978bab7a9f54
+      internalID: 934013374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f8541b1c4348d44bdfc979c18bd0cc
+      internalID: -241455246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e788d8d4d30a67f489218adbdc8ab4a2
+      internalID: 152547222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a886293a3134fa8468c282164c200bea
+      internalID: 1292452955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_4
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7b0baf807d8f1458408e39506a79d9
+      internalID: 1755957971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732a09bd43a4aec4a955bd07154b5802
+      internalID: 1405666948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_6
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a071d521b8869b34eb3e2bfa8bb6eeee
+      internalID: -1716988937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_7
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d4ab6bf5afbc249882ebb60ea3e128
+      internalID: -1479622228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_8
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7adab908ca489b4099462e1815d54cd
+      internalID: -636252431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1031
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c83d9baad12084ab42b8765ccf021e
+      internalID: -79635517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9a7e37ccdccec48b775bc3255c5ce5
+      internalID: 543920837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3488ad29afec12445b9c7bfdf403330b
+      internalID: 229676435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01de660e7664fcd4faa41670528f11ce
+      internalID: -246546639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c09bb626abf8014bbd56b64d86832fb
+      internalID: -1751737702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6c56eb1ade83e46a33f409f1ecf217
+      internalID: 46793771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b55d1d428031b47a3af6882be14814
+      internalID: -1234907379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3546a1672f344a743a677a599cd95d7a
+      internalID: 1536132851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_17
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8211ea62270ffcf42b21205272a27ffa
+      internalID: -89045337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_18
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5619d7353ae4f7341b40928bfecdd7d5
+      internalID: -1214572608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_19
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3ec7a2dc4dbf840b42513209a1c51a
+      internalID: 2051828393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf94b486161ba46488b0706222466db6
+      internalID: 215139284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_21
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81254da2909099f498a62c616395e26d
+      internalID: 1116476370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e4dfe13254db948ae8b65379d91d97
+      internalID: -1270246715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_23
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909a30aaaf8748e49af80b56b91cffc9
+      internalID: -1821140615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_24
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e564a36801bd5b942b84e54485fc9425
+      internalID: -1553203932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_25
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 903
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135f914baec8d5a44bde1777f9b9f3f7
+      internalID: 1108970892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc191311fa2a00840bf63f2b28ce938b
+      internalID: -1720880494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae11775460b4bd34699e487e87061f1f
+      internalID: -1128143006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438556332b8dcdc4d843f6184309fed8
+      internalID: 1032741315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_29
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2a58897563ca8418c0f963a9371a61
+      internalID: 810606126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_30
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727af3e364cd6764e8cce22dc383d2ad
+      internalID: -2143909737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_31
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8bd9f60be753d438be2e96f2ca4d59
+      internalID: 2080285886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_32
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeef59ff175faac4b904cbbd24702e39
+      internalID: 1330409954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_33
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07eff47d336edc444b8fb6b920ea7bae
+      internalID: 2057206261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_34
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9986d1d96978e5a409d277cb9fd5e81f
+      internalID: 908071682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_35
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd017919725fa3840a11b3dac8a6085d
+      internalID: 1348898936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_36
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7296801f6f45f428b44a96456e370b
+      internalID: 1211838365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_37
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f28253b821c6244912241458d345a6
+      internalID: -367973442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_38
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75b2fd4508d3be479ed4c08b0e3075b
+      internalID: -849633442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 775
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c930d722e5bf74aa681abbef5705e0
+      internalID: 1837795835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_40
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f49a3b290a3d94dac601fbc0b032a5
+      internalID: 847468391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6620aa40406d50c4c90438be5f136f4f
+      internalID: 1322672211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe150f029eb1af4ebc317bb2262e277
+      internalID: -1174310829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408a870c1e405b449af5231724773c9b
+      internalID: 967278810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2414a38f818b80a45b30b090c0672940
+      internalID: 1362724527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_45
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491e9d850994d9348ae2eb7707583221
+      internalID: -1835687988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_46
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899c8a145eb60d04eab4cf0f401d5f7e
+      internalID: -2065744081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_47
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a8b8fe77fe60a47a9fe75495df21e8
+      internalID: 1490342315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_48
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95ea4d34ff976c4c9b2ad2f1d44e68a
+      internalID: 726883205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_49
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2551f7929ad1943bfcb4b770677c9e
+      internalID: -1245225714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_50
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b5318ed2dd4c34fa9fbf8e0647e941
+      internalID: -1090393532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_51
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0a5679e086bd04d9c59b97ea81a174
+      internalID: -273747461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_52
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 647
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4802e2c17d813f4191d3c83686106b4
+      internalID: 565461325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168d7f77759d0ed4ea0c725ab42cfcbe
+      internalID: -2082701081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090fb7507e1ae114581ccf2d04dfcfd0
+      internalID: -1051060810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_55
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6540f397527cf48a9a69ded59f7fcb
+      internalID: 1537489905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_56
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5bc582c77e4c746acf9868840e0558
+      internalID: -1044042162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_57
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc82a72a04a4c24408964459b4810eec
+      internalID: -467427494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_58
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453ec706c5997cd4780be08ff3dee599
+      internalID: 960480268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_59
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eba6e445bb645439bc473d8784ff85
+      internalID: -1688494055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_60
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec144cfbd61dc9046ae1f6a60f039847
+      internalID: 455063381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_61
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a85b072d2fce704e94e330dae84e756
+      internalID: -2015707057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_62
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22635f3c80af9104d896409fa4189f36
+      internalID: 1602413329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_63
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496da85fca1686d4bbc4926a21306818
+      internalID: -1114129787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_64
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f6a4e73cd8466459e8ad2ab2a1ff95
+      internalID: -1707419663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_65
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283efb5096dec314391379cca1c208f2
+      internalID: -470407826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_66
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd7b4aa884af394cb560142cbadc102
+      internalID: -989863713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_67
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b85c703c50e8444ad4adcdb5d9e7c1
+      internalID: 565052524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_68
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702e1ec87c83a31439d3a03199fc3bfd
+      internalID: 1854554858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_69
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1504230401118f0429f280d3761fa6a4
+      internalID: 2076815640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_70
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 519
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e78bf97aeafc04dba2aa1115bf7df2
+      internalID: 80155333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a60f79d9ee11974b972a940d9e7355b
+      internalID: 822991166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701c14d674f8d8749adeb311ea8ec224
+      internalID: 1432975279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_73
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe12bfcca1c6ce4aabae4bc6ef310fe
+      internalID: 495706617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_74
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39c4f5389b3b6340a6ea16d60d66292
+      internalID: -16402872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_75
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c587e529958c3479b4f553c5c4f376
+      internalID: -1329301802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_76
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51618a8325675434283534bcd6a773a5
+      internalID: 1072225868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_77
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b335a989073801247b2a6a70c026776d
+      internalID: 444906088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_78
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9acb41439557e914fb8088f50526ff73
+      internalID: -609840169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_79
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbc17c90ddf6f54b848aad8c6f3944b
+      internalID: -910181891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_80
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd461cd804c98e46af8de2505ba81b1
+      internalID: 1122432410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_81
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff2c17385f1d854688fad3b0b70511a
+      internalID: 969358540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_82
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8bcae0dd5756d248aa218e76c27a29f
+      internalID: -1059913763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_83
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8c2bdb1c163b74aab087a4c9d96437
+      internalID: 2071750633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_84
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e95e9e59df5c84db671eac71f98a18
+      internalID: -1987967739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_85
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5790bf6db40ca104990cbef32607be4b
+      internalID: -331869043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_86
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faea552dd80b38349bfcfde8a3817505
+      internalID: -542728103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_87
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c20b64879d2d248889b47a41379537
+      internalID: -442091684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_88
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 391
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb9854315caa584dba750422b2c7a09
+      internalID: 43476300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe1baf617b5e0940b7756de7164d915
+      internalID: -1787847366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_90
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6231c5fd6ba23e48a971a03b6c06864
+      internalID: 537433348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_91
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75104bc7a602a044da9cfec2ea7b3138
+      internalID: 287613326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_92
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa32a77b8ddf3e488e2c6ec1061be2a
+      internalID: -1789158994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_93
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d37e95b3479894fb12e5abbabbb215
+      internalID: -994827170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_94
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44f5fde0173bbf469f3d395d61fd34a
+      internalID: -797542559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_95
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e3a1345666dbf4a879099a7f145da7
+      internalID: 2109337941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_96
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0546a329422c344a556e7533d0249d
+      internalID: 662217372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_97
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716f390254b396d49b6c45ce1cca3c2f
+      internalID: -131335006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_98
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ba75b8e8bcd1f4da8e7168b4a7180a
+      internalID: 1979454872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_99
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a48e33dd8075249b2a1ede27ce2d02
+      internalID: -1046160713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_100
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0433749046ff184cafd732aa124e7ea
+      internalID: 55553273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_101
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38b3272b8856cc49a30dedf9f8efb20
+      internalID: -791439719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_102
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4886e6d1eb875d42a31dd253d987a09
+      internalID: -1200608526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_103
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e457e473ff835bf4e86ecc082092d732
+      internalID: 334902205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_104
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c915f3b0b34dd54d9de71b2ce703ed2
+      internalID: -203915752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_105
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fea70b43ac77544a800b3a33cb82f7b
+      internalID: -1010639054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_106
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 263
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea6f3bdd8cbd6640b837787a085d698
+      internalID: 1925780591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_107
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c38449d8cb757d43afe6e1fb5afaa9e
+      internalID: 766476321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_108
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fdfcaf9eca16e4b8064265d51c2f9b
+      internalID: 996017733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_109
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83d187e90f793a4f94bacaa978347bd
+      internalID: -768656855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_110
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7898e872a18a674ea57c370002a64d9
+      internalID: -921401768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_111
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f13c3859d571f64a95566f5b5c337a6
+      internalID: -705425028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_112
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca728624cc7d3da4680ea6e5d25a3566
+      internalID: -1368179821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_113
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cdc50e0fa50979428d8c8fbc4b5d20b
+      internalID: -48484900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_114
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0222a7e4365a127438eaaef1b63752d9
+      internalID: 871305471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_115
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d68d5fd064de094caca307ea30e886e
+      internalID: 378890540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_116
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafc6b8a6e626ca41acc7e2d015017c1
+      internalID: -747568016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_117
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9388f4f49b1b742857fe872633b8eb
+      internalID: -877403176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_118
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42539d6af5c1b334cb359b3405c26ccb
+      internalID: 2140879687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_119
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ed7692701262344ae9ddc62ec10fd2
+      internalID: -1596826041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_120
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fa56dc13e5fbf469385e8ee7a1e1cc
+      internalID: 1196970581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_121
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7df78695f4c2b748bcd7ff2cf27fe53
+      internalID: 1398088379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_122
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6dc3a9f867e5d4c9de4c6c295c910f
+      internalID: 1205066553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_123
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c95c60d0431d4941ae7ce0ea166b566
+      internalID: -932121011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_124
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 135
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e50b1776feb84a4aa8ac51ae360b930
+      internalID: -420442151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53e3e5a348e65e4cb276baea8b45ec5
+      internalID: 408665334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_126
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84dbe8bfc33d74f4c9af6c0285d9e235
+      internalID: 1807259232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_127
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6691dc5b634ad7442a1ce8c9e4abad88
+      internalID: -1639726692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_128
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac0758fc4fb7e64bb9149fae887b4b6
+      internalID: 844752682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_129
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddc1add9a0ca994695c8fe2fc10e614
+      internalID: 1019069950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_130
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10040281453f72542994260f26394f59
+      internalID: -749205047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_131
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f629b3f3092afd478e2d0a671c9d4cc
+      internalID: -1171497263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_132
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd9647a66dc7cf45a936b6aa05200f5
+      internalID: -62894355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_133
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93131613445fed42a4bc4a1ac549a34
+      internalID: 1083558791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_134
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee84234173795dc47874d8661f20e045
+      internalID: -143302829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_135
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80fe1bde9519e24a97a574053bf0ca3
+      internalID: -170245429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_136
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e16c74319411454a8acee8f10bc6f20
+      internalID: -247490878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_137
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a226a5b0c4f1c4c99dae82263474f1
+      internalID: 1199921352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_138
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032ec342480ca794983d0010b2e4cc38
+      internalID: -1344141662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_139
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76144d846a4c0e043944c9f19fe1251d
+      internalID: 227003035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: the-big-gay_tileset-foliage_140
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 7
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd8fca4f1436744589bed61fd8b8f9b
+      internalID: 1382414768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      the-big-gay_tileset-foliage_0: 934013374
+      the-big-gay_tileset-foliage_1: -241455246
+      the-big-gay_tileset-foliage_10: 543920837
+      the-big-gay_tileset-foliage_100: 55553273
+      the-big-gay_tileset-foliage_101: -791439719
+      the-big-gay_tileset-foliage_102: -1200608526
+      the-big-gay_tileset-foliage_103: 334902205
+      the-big-gay_tileset-foliage_104: -203915752
+      the-big-gay_tileset-foliage_105: -1010639054
+      the-big-gay_tileset-foliage_106: 1925780591
+      the-big-gay_tileset-foliage_107: 766476321
+      the-big-gay_tileset-foliage_108: 996017733
+      the-big-gay_tileset-foliage_109: -768656855
+      the-big-gay_tileset-foliage_11: 229676435
+      the-big-gay_tileset-foliage_110: -921401768
+      the-big-gay_tileset-foliage_111: -705425028
+      the-big-gay_tileset-foliage_112: -1368179821
+      the-big-gay_tileset-foliage_113: -48484900
+      the-big-gay_tileset-foliage_114: 871305471
+      the-big-gay_tileset-foliage_115: 378890540
+      the-big-gay_tileset-foliage_116: -747568016
+      the-big-gay_tileset-foliage_117: -877403176
+      the-big-gay_tileset-foliage_118: 2140879687
+      the-big-gay_tileset-foliage_119: -1596826041
+      the-big-gay_tileset-foliage_12: -246546639
+      the-big-gay_tileset-foliage_120: 1196970581
+      the-big-gay_tileset-foliage_121: 1398088379
+      the-big-gay_tileset-foliage_122: 1205066553
+      the-big-gay_tileset-foliage_123: -932121011
+      the-big-gay_tileset-foliage_124: -420442151
+      the-big-gay_tileset-foliage_125: 408665334
+      the-big-gay_tileset-foliage_126: 1807259232
+      the-big-gay_tileset-foliage_127: -1639726692
+      the-big-gay_tileset-foliage_128: 844752682
+      the-big-gay_tileset-foliage_129: 1019069950
+      the-big-gay_tileset-foliage_13: -1751737702
+      the-big-gay_tileset-foliage_130: -749205047
+      the-big-gay_tileset-foliage_131: -1171497263
+      the-big-gay_tileset-foliage_132: -62894355
+      the-big-gay_tileset-foliage_133: 1083558791
+      the-big-gay_tileset-foliage_134: -143302829
+      the-big-gay_tileset-foliage_135: -170245429
+      the-big-gay_tileset-foliage_136: -247490878
+      the-big-gay_tileset-foliage_137: 1199921352
+      the-big-gay_tileset-foliage_138: -1344141662
+      the-big-gay_tileset-foliage_139: 227003035
+      the-big-gay_tileset-foliage_14: 46793771
+      the-big-gay_tileset-foliage_140: 1382414768
+      the-big-gay_tileset-foliage_15: -1234907379
+      the-big-gay_tileset-foliage_16: 1536132851
+      the-big-gay_tileset-foliage_17: -89045337
+      the-big-gay_tileset-foliage_18: -1214572608
+      the-big-gay_tileset-foliage_19: 2051828393
+      the-big-gay_tileset-foliage_2: 152547222
+      the-big-gay_tileset-foliage_20: 215139284
+      the-big-gay_tileset-foliage_21: 1116476370
+      the-big-gay_tileset-foliage_22: -1270246715
+      the-big-gay_tileset-foliage_23: -1821140615
+      the-big-gay_tileset-foliage_24: -1553203932
+      the-big-gay_tileset-foliage_25: 1108970892
+      the-big-gay_tileset-foliage_26: -1720880494
+      the-big-gay_tileset-foliage_27: -1128143006
+      the-big-gay_tileset-foliage_28: 1032741315
+      the-big-gay_tileset-foliage_29: 810606126
+      the-big-gay_tileset-foliage_3: 1292452955
+      the-big-gay_tileset-foliage_30: -2143909737
+      the-big-gay_tileset-foliage_31: 2080285886
+      the-big-gay_tileset-foliage_32: 1330409954
+      the-big-gay_tileset-foliage_33: 2057206261
+      the-big-gay_tileset-foliage_34: 908071682
+      the-big-gay_tileset-foliage_35: 1348898936
+      the-big-gay_tileset-foliage_36: 1211838365
+      the-big-gay_tileset-foliage_37: -367973442
+      the-big-gay_tileset-foliage_38: -849633442
+      the-big-gay_tileset-foliage_39: 1837795835
+      the-big-gay_tileset-foliage_4: 1755957971
+      the-big-gay_tileset-foliage_40: 847468391
+      the-big-gay_tileset-foliage_41: 1322672211
+      the-big-gay_tileset-foliage_42: -1174310829
+      the-big-gay_tileset-foliage_43: 967278810
+      the-big-gay_tileset-foliage_44: 1362724527
+      the-big-gay_tileset-foliage_45: -1835687988
+      the-big-gay_tileset-foliage_46: -2065744081
+      the-big-gay_tileset-foliage_47: 1490342315
+      the-big-gay_tileset-foliage_48: 726883205
+      the-big-gay_tileset-foliage_49: -1245225714
+      the-big-gay_tileset-foliage_5: 1405666948
+      the-big-gay_tileset-foliage_50: -1090393532
+      the-big-gay_tileset-foliage_51: -273747461
+      the-big-gay_tileset-foliage_52: 565461325
+      the-big-gay_tileset-foliage_53: -2082701081
+      the-big-gay_tileset-foliage_54: -1051060810
+      the-big-gay_tileset-foliage_55: 1537489905
+      the-big-gay_tileset-foliage_56: -1044042162
+      the-big-gay_tileset-foliage_57: -467427494
+      the-big-gay_tileset-foliage_58: 960480268
+      the-big-gay_tileset-foliage_59: -1688494055
+      the-big-gay_tileset-foliage_6: -1716988937
+      the-big-gay_tileset-foliage_60: 455063381
+      the-big-gay_tileset-foliage_61: -2015707057
+      the-big-gay_tileset-foliage_62: 1602413329
+      the-big-gay_tileset-foliage_63: -1114129787
+      the-big-gay_tileset-foliage_64: -1707419663
+      the-big-gay_tileset-foliage_65: -470407826
+      the-big-gay_tileset-foliage_66: -989863713
+      the-big-gay_tileset-foliage_67: 565052524
+      the-big-gay_tileset-foliage_68: 1854554858
+      the-big-gay_tileset-foliage_69: 2076815640
+      the-big-gay_tileset-foliage_7: -1479622228
+      the-big-gay_tileset-foliage_70: 80155333
+      the-big-gay_tileset-foliage_71: 822991166
+      the-big-gay_tileset-foliage_72: 1432975279
+      the-big-gay_tileset-foliage_73: 495706617
+      the-big-gay_tileset-foliage_74: -16402872
+      the-big-gay_tileset-foliage_75: -1329301802
+      the-big-gay_tileset-foliage_76: 1072225868
+      the-big-gay_tileset-foliage_77: 444906088
+      the-big-gay_tileset-foliage_78: -609840169
+      the-big-gay_tileset-foliage_79: -910181891
+      the-big-gay_tileset-foliage_8: -636252431
+      the-big-gay_tileset-foliage_80: 1122432410
+      the-big-gay_tileset-foliage_81: 969358540
+      the-big-gay_tileset-foliage_82: -1059913763
+      the-big-gay_tileset-foliage_83: 2071750633
+      the-big-gay_tileset-foliage_84: -1987967739
+      the-big-gay_tileset-foliage_85: -331869043
+      the-big-gay_tileset-foliage_86: -542728103
+      the-big-gay_tileset-foliage_87: -442091684
+      the-big-gay_tileset-foliage_88: 43476300
+      the-big-gay_tileset-foliage_89: -1787847366
+      the-big-gay_tileset-foliage_9: -79635517
+      the-big-gay_tileset-foliage_90: 537433348
+      the-big-gay_tileset-foliage_91: 287613326
+      the-big-gay_tileset-foliage_92: -1789158994
+      the-big-gay_tileset-foliage_93: -994827170
+      the-big-gay_tileset-foliage_94: -797542559
+      the-big-gay_tileset-foliage_95: 2109337941
+      the-big-gay_tileset-foliage_96: 662217372
+      the-big-gay_tileset-foliage_97: -131335006
+      the-big-gay_tileset-foliage_98: 1979454872
+      the-big-gay_tileset-foliage_99: -1046160713
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
