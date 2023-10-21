@@ -955,17 +955,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187487477}
-  m_LocalRotation: {x: 0, y: 0, z: -0.1377902, w: 0.99046147}
+  m_LocalRotation: {x: -0, y: -0, z: -0.082707204, w: 0.99657387}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1105682499}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.84}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -9.488}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 794, y: -305}
-  m_SizeDelta: {x: 616.4066, y: 120.032}
+  m_AnchoredPosition: {x: -4.6900635, y: 18.794006}
+  m_SizeDelta: {x: 188.036, y: 110.471}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &187487479
 MonoBehaviour:
@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 436.94302, w: 37.78077}
+  m_margin: {x: 0, y: 0, z: -0.87751764, w: -1.7642251}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2292,7 +2292,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e472088a4d308624c8a9dbc2e44658e0, type: 3}
+  m_Sprite: {fileID: -1885257147, guid: b7ac58e99ff7e944397cd9fe6ffde8dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2991,8 +2991,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 72}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0.57312, y: 48.45}
+  m_SizeDelta: {x: 110.69, y: 117.445}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972257785
 MonoBehaviour:
@@ -3014,7 +3014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7bda5956bf477e14684b748b6bf007bd, type: 3}
+  m_Sprite: {fileID: -1865965922, guid: 52ce68112fd8af24787da6e2da312c5a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3683,7 +3683,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1105682499
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3856,7 +3856,7 @@ GameObject:
   - component: {fileID: 1172019369}
   - component: {fileID: 1172019368}
   m_Layer: 5
-  m_Name: Bake
+  m_Name: Drag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3901,7 +3901,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8ef8796ce0120c142829e4838274fdc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd2af24e4ad140a468ff933d2c4592aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4958,12 +4958,12 @@ MonoBehaviour:
   - instance: {fileID: 565603640}
     spriteActive: {fileID: 21300000, guid: ec872c9ec4a205d4c876c8ed33f829c3, type: 3}
     spriteInactive: {fileID: 21300000, guid: 8c3ae52b8cd4e324794a2e68782467d2, type: 3}
-    gameType: 2
+    gameType: 4
   companionAction:
     instance: {fileID: 1172019366}
-    spriteActive: {fileID: 21300000, guid: a589258cb614a804289f95a560acfbfa, type: 3}
-    spriteInactive: {fileID: 21300000, guid: 8ef8796ce0120c142829e4838274fdc3, type: 3}
-    gameType: 1
+    spriteActive: {fileID: 21300000, guid: 7f8cebebff174324aaca36cdc511d106, type: 3}
+    spriteInactive: {fileID: 21300000, guid: 57a2932cc3e88b44da7253b41947e70a, type: 3}
+    gameType: 2
   inGame: 0
   audioManager: {fileID: 1197340369}
 --- !u!1 &1606637277

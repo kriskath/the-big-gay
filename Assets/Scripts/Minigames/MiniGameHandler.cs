@@ -80,9 +80,7 @@ public class MiniGameHandler : MonoBehaviour
                 break;
         }
 
-        if (tries > 0){
-            tries--;
-        }
+        tries--;
         if (tries == 0){
             battleUI.AddCompanionButton();
         }
