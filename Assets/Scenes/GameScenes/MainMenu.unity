@@ -3470,6 +3470,7 @@ GameObject:
   - component: {fileID: 1159310642}
   - component: {fileID: 1159310644}
   - component: {fileID: 1159310643}
+  - component: {fileID: 1159310645}
   m_Layer: 5
   m_Name: Sparkle (1)
   m_TagString: Untagged
@@ -3534,6 +3535,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159310641}
   m_CullTransparentMesh: 1
+--- !u!95 &1159310645
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159310641}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 415be1b05690042598dfc5a0baccab92, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1166124207
 GameObject:
   m_ObjectHideFlags: 0
@@ -4105,6 +4127,7 @@ GameObject:
   - component: {fileID: 1485915695}
   - component: {fileID: 1485915697}
   - component: {fileID: 1485915696}
+  - component: {fileID: 1485915698}
   m_Layer: 5
   m_Name: Sparkles
   m_TagString: Untagged
@@ -4169,6 +4192,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485915694}
   m_CullTransparentMesh: 1
+--- !u!95 &1485915698
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485915694}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b90d757d980031dd29400fdb6157ffd5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1496404265
 GameObject:
   m_ObjectHideFlags: 0
@@ -4562,6 +4606,7 @@ GameObject:
   - component: {fileID: 1536110689}
   - component: {fileID: 1536110691}
   - component: {fileID: 1536110690}
+  - component: {fileID: 1536110692}
   m_Layer: 5
   m_Name: Eyes
   m_TagString: Untagged
@@ -4627,6 +4672,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536110688}
   m_CullTransparentMesh: 1
+--- !u!95 &1536110692
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536110688}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 665521637963710e0bc85c85e1dde532, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1594390873
 GameObject:
   m_ObjectHideFlags: 0
@@ -6286,6 +6352,7 @@ GameObject:
   - component: {fileID: 1898466280}
   - component: {fileID: 1898466282}
   - component: {fileID: 1898466281}
+  - component: {fileID: 1898466283}
   m_Layer: 5
   m_Name: Static
   m_TagString: Untagged
@@ -6309,7 +6376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -9.484}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75.1, y: 18.5}
+  m_AnchoredPosition: {x: -81, y: 4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898466281
@@ -6350,6 +6417,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898466279}
   m_CullTransparentMesh: 1
+--- !u!95 &1898466283
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898466279}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 18fe11ecd9e706203af4f5ee47d4c20c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1933885075
 GameObject:
   m_ObjectHideFlags: 0
@@ -6397,6 +6485,7 @@ GameObject:
   - component: {fileID: 1965823453}
   - component: {fileID: 1965823455}
   - component: {fileID: 1965823454}
+  - component: {fileID: 1965823456}
   m_Layer: 5
   m_Name: Sparkle
   m_TagString: Untagged
@@ -6461,6 +6550,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965823452}
   m_CullTransparentMesh: 1
+--- !u!95 &1965823456
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965823452}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 836bd8ab03f6dd94f9f896ee5654a9b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1993500895
 GameObject:
   m_ObjectHideFlags: 0
