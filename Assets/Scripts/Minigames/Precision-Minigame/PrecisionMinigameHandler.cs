@@ -159,7 +159,6 @@ public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
             yield return null;
         }
         
-        
         bPaused = false;
     }
 

@@ -87,7 +87,7 @@ namespace MenuAsset
                 return;
             }
 
-            audioMixer.SetFloat("MasterVolume", Mathf.Log10(volume) * 20); //represents slider value to log base 10 and mult by factor of 20
+            audioMixer.SetFloat("MasterVolume", (volume == 0f ? -80f : Mathf.Log10(volume)) * 20); //represents slider value to log base 10 and mult by factor of 20
         }
 
         public void SetSfxVolume(float volume)
@@ -98,7 +98,7 @@ namespace MenuAsset
                 return;
             }
             
-            audioMixer.SetFloat("SFXVolume", Mathf.Log10(volume) * 20); //represents slider value to log base 10 and mult by factor of 20
+            audioMixer.SetFloat("SFXVolume", (volume == 0f ? -80f : Mathf.Log10(volume)) * 20); //represents slider value to log base 10 and mult by factor of 20
         }
         
         public void SetMusicVolume(float volume)
@@ -109,7 +109,7 @@ namespace MenuAsset
                 return;
             }
 
-            audioMixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20); //represents slider value to log base 10 and mult by factor of 20
+            audioMixer.SetFloat("MusicVolume", (volume == 0f ? -80f : Mathf.Log10(volume)) * 20); //represents slider value to log base 10 and mult by factor of 20
         }
 
         public void SetQuality(int qualityIndex)

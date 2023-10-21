@@ -31,6 +31,11 @@ namespace MenuAsset
             }
         }
 
+        public void PlayGameFromGameManager()
+        {
+            GameManager.Instance.LoadTownScene();
+        }
+
         public void QuitGame()
         {
             Debug.Log("Game Quit");
