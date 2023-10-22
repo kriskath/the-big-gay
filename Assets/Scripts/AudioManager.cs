@@ -49,18 +49,33 @@ public class AudioManager : MonoBehaviour
 	}
     public void PlayMainMenuTheme()
     {
+        if (bgmAudioSource.clip == gameMainThemeMusic)
+        {
+            return;
+        }
+        
         bgmAudioSource.Stop();
         bgmAudioSource.clip = gameMainThemeMusic;
         bgmAudioSource.Play();
     }
     public void PlayTravelingTheme()
     {
+        if (bgmAudioSource.clip == gameTravelingMusic)
+        {
+            return;
+        }
+        
         bgmAudioSource.Stop();
         bgmAudioSource.clip = gameTravelingMusic;
         bgmAudioSource.Play();
     }
     public void PlayBattleTheme()
     {
+        if (bgmAudioSource.clip == gameBattleMusic)
+        {
+            return;
+        }
+        
         bgmAudioSource.Stop();
         bgmAudioSource.clip = gameBattleMusic;
         bgmAudioSource.Play();

@@ -93,6 +93,13 @@ public class GameManager : MonoBehaviour
 				Debug.LogWarning("Couldn't load player location data. No player found. Check for instance made or `Player` tag set.");
 			}
 		}
+
+		if (toBuildIndex == townSceneBuildIndex || toBuildIndex == bakerySceneBuildIndex || toBuildIndex == dragBarSceneBuildIndex)
+		{
+			AudioManager.Instance.PlayTravelingTheme();
+		}
+		
+		
 		
 	}
 
