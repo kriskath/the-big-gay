@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Character_testing.unity
     guid: ca7157e0f6c38bc4b80af410a7c43670
   - enabled: 1
-    path: Assets/Scenes/TestScenes/BattleTuff 1.unity
+    path: Assets/Scenes/GameScenes/BattleTuff.unity
     guid: ff4bba3718bc94849a5cc851f5325825
   - enabled: 1
-    path: Assets/Scenes/TestScenes/BattleWubbums.unity
+    path: Assets/Scenes/GameScenes/BattleWubbums.unity
     guid: 63659c6e184bc9a4eb82d30f113fe3f3
   m_configObjects: {}

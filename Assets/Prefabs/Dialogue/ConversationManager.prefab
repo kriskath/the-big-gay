@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 136.24208, y: 58.7}
+  m_AnchoredPosition: {x: 119, y: 64}
   m_SizeDelta: {x: 185.0174, y: 50.8827}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2269912367657598184
@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: edc361a8f3d1f5e16835442276b5c681, type: 2}
-  m_sharedMaterial: {fileID: 2882573834426150502, guid: edc361a8f3d1f5e16835442276b5c681, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: baddb2568437c4d468ec7783740450e6, type: 2}
+  m_sharedMaterial: {fileID: -6982696161274109806, guid: baddb2568437c4d468ec7783740450e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -168,7 +168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 80.8, y: -0.80000687}
+  m_AnchoredPosition: {x: 46.8, y: -0.80000687}
   m_SizeDelta: {x: -195.9, y: -31.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3900108754347413310
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -24.334717, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -595,6 +595,7 @@ GameObject:
   - component: {fileID: 3900108755397112062}
   - component: {fileID: 3900108755397112057}
   - component: {fileID: 3900108755397112056}
+  - component: {fileID: 362893625672945550}
   m_Layer: 5
   m_Name: NPCIcon
   m_TagString: Untagged
@@ -611,15 +612,15 @@ RectTransform:
   m_GameObject: {fileID: 3900108755397112059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3900108755395677323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: -2.6}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchoredPosition: {x: 72, y: -0.8}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3900108755397112057
 CanvasRenderer:
@@ -659,3 +660,24 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &362893625672945550
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900108755397112059}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
