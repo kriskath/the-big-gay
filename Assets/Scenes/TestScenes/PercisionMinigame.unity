@@ -675,10 +675,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrecisionMinigame
       objectReference: {fileID: 0}
-    - target: {fileID: 3812456577336005001, guid: ba81f3ef972da231b93c27d69ab222ea, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7966892707269975736, guid: ba81f3ef972da231b93c27d69ab222ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

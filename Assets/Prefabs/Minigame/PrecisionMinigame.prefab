@@ -298,7 +298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1977784324389543986
 Transform:
   m_ObjectHideFlags: 0
@@ -467,8 +467,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: hit 'e' on that bright box! :3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 05b6ccd06e330edae861499284fea235, type: 2}
-  m_sharedMaterial: {fileID: -6982696161274109806, guid: 05b6ccd06e330edae861499284fea235, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: edc361a8f3d1f5e16835442276b5c681, type: 2}
+  m_sharedMaterial: {fileID: 2882573834426150502, guid: edc361a8f3d1f5e16835442276b5c681, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
