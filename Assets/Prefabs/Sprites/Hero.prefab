@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.94, y: -1.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -148,10 +148,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312d87f408f8f854093e77009d8c1a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 2
-  interactableLayer:
+  interactionDistance: 3
+  npcInteractableLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+  doorInteractableLayer:
+    serializedVersion: 2
+    m_Bits: 64
   speed: 5
   animator: {fileID: 9195517255987200485}
 --- !u!61 &4244445307786689172

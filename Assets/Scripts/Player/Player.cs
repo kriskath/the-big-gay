@@ -9,7 +9,8 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField] private float interactionDistance = 2.0f;
-    [SerializeField] private LayerMask interactableLayer;     // Need to set a layer in Edit -> Project Settings -> Tags and Layers
+    [SerializeField] private LayerMask npcInteractableLayer;     // Need to set a layer in Edit -> Project Settings -> Tags and Layers
+    [SerializeField] private LayerMask doorInteractableLayer;     // Need to set a layer in Edit -> Project Settings -> Tags and Layers
     [SerializeField] [Range(0f, 20f )] private float speed = 1f;
     
     public Animator animator;
@@ -47,7 +48,10 @@ public class Player : MonoBehaviour
             
             if (CanInteract && Input.GetKeyDown(KeyCode.E))
             {
-                CheckForNPCs();
+                if (!CheckForNPCs())
+                {
+                    CheckForDoor();
+                }
             }  
         }
     }
@@ -90,10 +94,10 @@ public class Player : MonoBehaviour
         SetCanMove(false);
     }
 
-    void CheckForNPCs()
+    bool CheckForNPCs()
     {
-    // Detect all colliders within a box centered at the player's position with dimensions defined by 'interactionDistance' and filter by the 'interactableLayer'.
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(transform.position, new Vector2(interactionDistance, interactionDistance), 0f, interactableLayer);
+        // Detect all colliders within a box centered at the player's position with dimensions defined by 'interactionDistance' and filter by the 'interactableLayer'.
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(transform.position, new Vector2(interactionDistance, interactionDistance), 0f, npcInteractableLayer);
         foreach (Collider2D collider in colliders)
         {
             // Check if the collider belongs to an interactable character.
@@ -102,10 +106,31 @@ public class Player : MonoBehaviour
             if (npcInteraction != null)
             {
                 npcInteraction.StartConversation(rb.transform);
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    void CheckForDoor()
+    {
+        // Detect all colliders within a box centered at the player's position with dimensions defined by 'interactionDistance' and filter by the 'interactableLayer'.
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(transform.position, new Vector2(interactionDistance, interactionDistance), 0f, doorInteractableLayer);
+        foreach (Collider2D collider in colliders)
+        {
+            // Check if the collider belongs to an interactable character.
+            DoorInteract doorInteraction = collider.GetComponent<DoorInteract>();
+
+            if (doorInteraction)
+            {
+                Debug.Log("Starting door interaction.");
+                doorInteraction.Interact();
+                return;
             }
         }
     }
-
+    
     public void StartConversation()
     {
         SetCanInteract(false);
