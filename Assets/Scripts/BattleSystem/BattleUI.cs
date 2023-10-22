@@ -36,6 +36,7 @@ public class BattleUI : MonoBehaviour
     // Group: Game State
     [SerializeField] 
     public bool inGame = false;
+    public GameObject gameManager;
 
     // Group: Audio
     [SerializeField] 
@@ -51,9 +52,11 @@ public class BattleUI : MonoBehaviour
     private void Start()
     {
         if (AudioManager.Instance == null){
-            Debug.Log("what??");
+            gameManager.SetActive(true);
+            audioManager = gameManager.GetComponent<AudioManager>();
         }
-        audioManager = AudioManager.Instance;
+        else audioManager = AudioManager.Instance;
+        audioManager.PlayBattleTheme();
         hpSlider.value = hp;
     }
 
