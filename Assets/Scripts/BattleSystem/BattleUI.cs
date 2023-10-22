@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DialogueEditor;
+using TMPro;
 
 public class BattleUI : MonoBehaviour
 {
-        // Group: Dialogue UI
+    // Group: Dialogue UI
     [SerializeField] 
     private GameObject[] dialogueBubbles;
 
@@ -18,6 +19,8 @@ public class BattleUI : MonoBehaviour
     private float hp = 100;
     [SerializeField] 
     private bool gameOver = false;
+    private Color originalColor;
+    private float hpDepletionSpeed = 10.0f;
 
     // Group: Battle Buttons
     [SerializeField] 
@@ -58,6 +61,7 @@ public class BattleUI : MonoBehaviour
         else audioManager = AudioManager.Instance;
         audioManager.PlayBattleTheme();
         hpSlider.value = hp;
+        originalColor = hpSlider.fillRect.GetComponent<Image>().color;
     }
 
     private void OnDisable()
@@ -66,7 +70,6 @@ public class BattleUI : MonoBehaviour
     }
     public void Update()
     {
-
         if (BattleMManager.Instance.IsIdle()){
             audioManager.StopCharacterSpeaking();
         }
@@ -78,6 +81,7 @@ public class BattleUI : MonoBehaviour
         if (hp <= 0)
         {
             gameOver = true;
+            audioManager.StopBGMusic();
             OnSwitchGame?.Invoke(MiniGameType.NoGame);
             Debug.Log("[HP gone] you failed.");
         }
@@ -164,6 +168,7 @@ public class BattleUI : MonoBehaviour
 
     public void AddCompanionButton()
     {
+        audioManager.PlayStartGameSFX();
         companionAction.instance.GetComponent<Image>().material = null;
         buttons.Add(companionAction);
         menuIndexMax++;
@@ -171,8 +176,59 @@ public class BattleUI : MonoBehaviour
 
     public void UpdateHP (float dhp)
     {
-        hp += dhp;
+        StartCoroutine(ChangeColorAndDepleteHP(dhp));
+    }
+
+    private IEnumerator ChangeColorAndDepleteHP(float dhp)
+    {
+        hpSlider.fillRect.GetComponent<Image>().color = Color.red;
+
+        float targetHP = hp + dhp;
+        float elapsedTime = 0f;
+
+        while (hp > targetHP)
+        {
+            elapsedTime += Time.deltaTime;
+            float newHP = Mathf.Lerp(hp, targetHP, elapsedTime * hpDepletionSpeed);
+            hp = newHP;
+            hpSlider.value = hp;
+
+            yield return null;
+        }
+
+        // Ensure the HP and slider values are set to the target.
+        hp = targetHP;
         hpSlider.value = hp;
+
+        hpSlider.fillRect.GetComponent<Image>().color = originalColor;
+    }
+
+    public void DragUpYourLife(){
+        GameObject companionIcon = GameObject.Find("CompanionIcon");
+        GameObject wubbDragPortrait = GameObject.Find("dragportrait");
+        TextMeshProUGUI wubbsName = GameObject.Find("CompanionName").GetComponent<TextMeshProUGUI>();
+
+        if (companionIcon != null && wubbDragPortrait != null)
+        {
+            Image companionImage = companionIcon.GetComponent<Image>();
+            SpriteRenderer wubbSpriteRenderer = wubbDragPortrait.GetComponent<SpriteRenderer>();
+
+            if (companionImage != null && wubbSpriteRenderer != null)
+            {
+                companionImage.sprite = wubbSpriteRenderer.sprite;
+                GameObject.Find("wubbdrag").transform.localScale = new Vector3(1f, 1f, 1f);
+                wubbsName.text = "BINCHY DOLL";
+                wubbsName.fontSize = 19;
+            }
+            else
+            {
+                Debug.LogWarning("Image or SpriteRenderer component not found.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("GameObject not found.");
+        }
     }
     
 }

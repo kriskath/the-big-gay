@@ -139,7 +139,7 @@ public class PrecisionMinigameHandler : MonoBehaviour, IMiniGame
         Debug.Log("[Precision minigame] started");
         //UI should be hidden, so unhide it
         minigameUI.SetActive(true);
-        
+        tries = 3;
         triesText.text = "Tries: " + tries;
         //Initialize data and start game
         //SliceArea
