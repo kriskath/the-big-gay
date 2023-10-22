@@ -152,7 +152,7 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 0
-  speed: 3
+  speed: 5
   animator: {fileID: 9195517255987200485}
 --- !u!61 &4244445307786689172
 BoxCollider2D:
