@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using TMPro;
 
 namespace DialogueEditor
 {
@@ -38,7 +39,9 @@ namespace DialogueEditor
         public Sprite OptionImage;
         public Sprite OptionImageSelected;
         public bool OptionImageSliced;
+        public TMP_FontAsset AllFont;
         public bool AllowMouseInteraction;
+        
 
         // Non-User facing 
         // Not exposed via custom inspector
@@ -487,11 +490,11 @@ namespace DialogueEditor
             // Set font
             if (speech.TMPFont != null)
             {
-                DialogueText.font = speech.TMPFont;
+                DialogueText.font = AllFont;
             }
             else
             {
-                DialogueText.font = null;
+                DialogueText.font = AllFont;
             }
 
             // Set name
@@ -689,19 +692,19 @@ namespace DialogueEditor
                         // If there was no valid speech node (due to no conditions being met) this becomes a None button type
                         if (next == null)
                         {
-                            uiOption.SetupButton(UIConversationButton.eButtonType.End, null, endFont: m_conversation.EndConversationFont);
+                            uiOption.SetupButton(UIConversationButton.eButtonType.End, null, endFont: AllFont);
                         }
                         // Else, valid speech node found
                         else
                         {
-                            uiOption.SetupButton(UIConversationButton.eButtonType.Speech, next, continueFont: m_conversation.ContinueFont);
+                            uiOption.SetupButton(UIConversationButton.eButtonType.Speech, next, continueFont: AllFont);
                         }
                         
                     }
                     else if (m_currentSpeech.ConnectionType == Connection.eConnectionType.None)
                     {
                         UIConversationButton uiOption = CreateButton();
-                        uiOption.SetupButton(UIConversationButton.eButtonType.End, null, endFont: m_conversation.EndConversationFont);
+                        uiOption.SetupButton(UIConversationButton.eButtonType.End, null, endFont: AllFont);
                     }
                 }
 
@@ -762,6 +765,7 @@ namespace DialogueEditor
 
         private UIConversationButton CreateButton()
         {
+            
             UIConversationButton button = GameObject.Instantiate(ButtonPrefab, OptionsPanel);
             m_uiOptions.Add(button);
             return button;
