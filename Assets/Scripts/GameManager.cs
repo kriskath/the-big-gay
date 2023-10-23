@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -15,7 +16,6 @@ public class GameManager : MonoBehaviour
 	public static GameManager Instance { get { return _instance; } }
 
 	[Header("Scene Build Data")] 
-	
 	[SerializeField]
 	private int mainMenuBuildIndex = 0;
 	public int GetMainMenuSceneBuildIndex => mainMenuBuildIndex;
@@ -29,8 +29,16 @@ public class GameManager : MonoBehaviour
 	public int GetBakerySceneBuildIndex => bakerySceneBuildIndex;
 
 	[SerializeField]
-	private int dragBarSceneBuildIndex = 3;
+	private int bakeryBattleSceneBuildIndex = 3;
+	public int GetBakeryBattleSceneBuildIndex => bakeryBattleSceneBuildIndex;
+	
+	[SerializeField]
+	private int dragBarSceneBuildIndex = 4;
 	public int GetDragBarSceneBuildIndex => dragBarSceneBuildIndex;
+	
+	[SerializeField]
+	private int dragBarBattleSceneBuildIndex = 5;
+	public int GetDragBarBattleSceneBuildIndex => dragBarBattleSceneBuildIndex;
 	
 	[Header("Scene Transition Options")]
 	[SerializeField]
@@ -42,6 +50,19 @@ public class GameManager : MonoBehaviour
 	//Positional Data
 	private Vector3 lastPlayerPositionInTown;
 
+	//Game Progress values
+	private bool bFinishedBakery = false;
+	public bool FinishedBakery => bFinishedBakery;	
+	
+	private bool bFinishedBakeryBattle = false;
+	public bool FinishedBakeryBattle => bFinishedBakeryBattle;
+	
+	
+	private bool bFinishedDrag = false;
+	public bool FinishedDrag => bFinishedDrag;	
+	
+	private bool bFinishedDragBarBattle = false;
+	public bool FinishedDragBattle => bFinishedDragBarBattle;
 	
 	private void Awake()
 	{
@@ -65,7 +86,7 @@ public class GameManager : MonoBehaviour
 		Debug.Log("Saving data...");
 		
 		//When transitioning out of town scene.
-		if (fromBuildIndex == townSceneBuildIndex && (toBuildIndex == bakerySceneBuildIndex || toBuildIndex == dragBarSceneBuildIndex))
+		if (fromBuildIndex == townSceneBuildIndex &&  toBuildIndex != mainMenuBuildIndex)
 		{
 			//Save player location data in town to load back when coming back to TownScene
 			GameObject player = GameObject.FindWithTag("Player");
@@ -78,8 +99,26 @@ public class GameManager : MonoBehaviour
 				Debug.LogWarning("Couldn't save player location data. No player found. Check for instance made or `Player` tag set.");
 			}
 		}
+
+		//Progress - Finished battle Scenes
+		if (fromBuildIndex == bakeryBattleSceneBuildIndex && toBuildIndex == bakerySceneBuildIndex)
+		{
+			bFinishedBakeryBattle = true;
+		}
+		if (fromBuildIndex == dragBarBattleSceneBuildIndex && toBuildIndex == dragBarSceneBuildIndex)
+		{
+			bFinishedDragBarBattle = true;
+		}
 		
-		
+		//Progress - Finished entire interactions
+		if (fromBuildIndex == bakerySceneBuildIndex && toBuildIndex == townSceneBuildIndex)
+		{
+			bFinishedBakery = true;
+		}
+		if (fromBuildIndex == dragBarSceneBuildIndex && toBuildIndex == townSceneBuildIndex)
+		{
+			bFinishedDrag = true;
+		}
 	}
 
 	private void LoadData(int fromBuildIndex, int toBuildIndex)
@@ -105,7 +144,7 @@ public class GameManager : MonoBehaviour
 		{
 			AudioManager.Instance.PlayTravelingTheme();
 		}
-		else if (toBuildIndex == bakerySceneBuildIndex || toBuildIndex == dragBarSceneBuildIndex)
+		else if (toBuildIndex == bakeryBattleSceneBuildIndex || toBuildIndex == dragBarBattleSceneBuildIndex)
 		{
 			AudioManager.Instance.PlayBattleTheme();
 		}
@@ -171,15 +210,26 @@ public class GameManager : MonoBehaviour
 		StartCoroutine(TransitionScene(townSceneBuildIndex));
 	}
 
+	public void LoadBakeryBattleScene()
+	{
+		StartCoroutine(TransitionScene(bakeryBattleSceneBuildIndex));
+	}
+	
 	public void LoadBakeryScene()
 	{
 		StartCoroutine(TransitionScene(bakerySceneBuildIndex));
 	}
 
+	public void LoadDragBarBattleScene()
+	{
+		StartCoroutine(TransitionScene(dragBarBattleSceneBuildIndex));
+	}
+	
 	public void LoadDragBarScene()
 	{
 		StartCoroutine(TransitionScene(dragBarSceneBuildIndex));
 	}
+	
 	
 	#endregion
 

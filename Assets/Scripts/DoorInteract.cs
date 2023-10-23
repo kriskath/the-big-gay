@@ -26,10 +26,12 @@ public class DoorInteract : MonoBehaviour
                     GameManager.Instance.LoadTownScene();
                     return;    
                 case TraversalType.Bakery:
-                    GameManager.Instance.LoadBakeryScene();
+                    if (!GameManager.Instance.FinishedBakery)
+                        GameManager.Instance.LoadBakeryScene();
                     return;
                 case TraversalType.DragBar:
-                    GameManager.Instance.LoadDragBarScene();
+                    if (!GameManager.Instance.FinishedDrag)
+                        GameManager.Instance.LoadDragBarScene();
                     return;
                 default:
                     return;
