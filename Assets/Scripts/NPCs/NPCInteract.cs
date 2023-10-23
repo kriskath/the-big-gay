@@ -10,10 +10,6 @@ public class NPCInteract : MonoBehaviour
     public void StartConversation(Transform playerTransform)
     {
         if (!ConversationManager.Instance.IsConversationActive){
-            Vector3 direction = (playerTransform.position - transform.position).normalized;
-            direction.y = 0; // Keep the character upright in the 2D world (if needed).
-            transform.right = direction; // Make the character face the player.
-
             ConversationManager.Instance.StartConversation(conversation);
         }
       
