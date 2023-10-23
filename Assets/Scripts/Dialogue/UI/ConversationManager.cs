@@ -751,6 +751,15 @@ namespace DialogueEditor
             m_uiOptions[index].SetImage(OptionImageSelected, OptionImageSliced);
             m_uiOptions[m_currentSelectedIndex].SetColorFont(Color.white);
             m_uiOptions[index].SetHovering(true);
+
+            for (int i = 0; i < m_uiOptions.Count; i++)
+            {
+                if (i != index){
+                    m_uiOptions[i].SetHovering(false);
+                    m_uiOptions[i].SetImage(OptionImage, OptionImageSliced);
+                    m_uiOptions[i].SetColorFont(Color.black);
+                }
+            }
         }
 
         private void UnselectOption()
@@ -758,8 +767,6 @@ namespace DialogueEditor
             if (m_currentSelectedIndex < 0) { return; }
 
             m_uiOptions[m_currentSelectedIndex].SetHovering(false);
-            m_uiOptions[m_currentSelectedIndex].SetImage(OptionImage, OptionImageSliced);
-            m_uiOptions[m_currentSelectedIndex].SetColorFont(Color.black);
             m_currentSelectedIndex = -1;
         }
 

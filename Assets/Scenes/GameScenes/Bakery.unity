@@ -1204,6 +1204,14 @@ PrefabInstance:
       propertyPath: postFightWin
       value: 
       objectReference: {fileID: 1501367622}
+    - target: {fileID: 2056000924097998081, guid: 6cc18a419f53d224cbe24ee3c84e6a66, type: 3}
+      propertyPath: OptionImage
+      value: 
+      objectReference: {fileID: 21300000, guid: a59e8dd3214107b4aacfe08398a30a08, type: 3}
+    - target: {fileID: 2056000924097998081, guid: 6cc18a419f53d224cbe24ee3c84e6a66, type: 3}
+      propertyPath: OptionImageSelected
+      value: 
+      objectReference: {fileID: 21300000, guid: 5f3b3f79ab9214a448e4fce514fed9e3, type: 3}
     - target: {fileID: 3491393139500059910, guid: 6cc18a419f53d224cbe24ee3c84e6a66, type: 3}
       propertyPath: m_Sprite
       value: 

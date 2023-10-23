@@ -6,18 +6,12 @@ using DialogueEditor;
 public class NPCDialogueInside : MonoBehaviour
 {
     public NPCConversation preFight;
-    public NPCConversation postFightFail;
-    public NPCConversation postFightWin;
-    // Start is called before the first frame update
+    public NPCConversation postFight;
+
     void Start()
     {
+        // Todo: add check from game manager if won
         ConversationManager.Instance.StartConversation(preFight);
   
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
