@@ -249,6 +249,9 @@ namespace DialogueEditor
                 m_scrollIndex = 0;
             }
 
+            if (speech.Event != null)
+                speech.Event.Invoke();
+
             if (ScrollText)
             {
                 SetState(eState.ScrollingText);
