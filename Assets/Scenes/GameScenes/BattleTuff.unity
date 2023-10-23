@@ -3600,6 +3600,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4982685016214153334, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982685016214153334, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982685016214153334, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00034529547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982685016214153334, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 5222370572082987399, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
       propertyPath: NpcIcon
       value: 
@@ -3620,6 +3636,18 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1197340369}
+    - target: {fileID: 5884418828986449252, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 15589c1c68ab70447a8d5131701b374b, type: 3}
+    - target: {fileID: 5884418828986449252, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481440235713074688, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6762463356329735830, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
       propertyPath: m_sharedMaterial
       value: 
