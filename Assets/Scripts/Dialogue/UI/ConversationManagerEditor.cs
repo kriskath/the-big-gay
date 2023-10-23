@@ -22,7 +22,10 @@ namespace DialogueEditor
         SerializedProperty OptionImageSlicedProperty;
         SerializedProperty ScrollTextProperty;
         SerializedProperty ScrollTextSpeedProperty;
+        SerializedProperty AllFontProperty;
         SerializedProperty AllowMouseInteractionProperty;
+        
+        
 
         private void OnEnable()
         {
@@ -33,6 +36,7 @@ namespace DialogueEditor
             OptionImageSlicedProperty = serializedObject.FindProperty("OptionImageSliced");
             ScrollTextProperty = serializedObject.FindProperty("ScrollText");
             ScrollTextSpeedProperty = serializedObject.FindProperty("ScrollSpeed");
+            AllFontProperty = serializedObject.FindProperty("AllFont");
             AllowMouseInteractionProperty = serializedObject.FindProperty("AllowMouseInteraction");
         }
 
@@ -68,6 +72,7 @@ namespace DialogueEditor
             if (t.ScrollText)
                 EditorGUILayout.PropertyField(ScrollTextSpeedProperty);
             EditorGUILayout.Space();
+            EditorGUILayout.PropertyField(AllFontProperty);
 
             // Interaction options
             GUILayout.Label("Interaction options", EditorStyles.boldLabel);

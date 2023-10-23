@@ -24,6 +24,7 @@ public class MiniGameHandler : MonoBehaviour
     
     private int tries = 3;
     private int phases = 3;
+    private bool isWubbums = false;
 
     private void Start(){
         battleUI.NPCSpeak(battleOnStart);
@@ -56,7 +57,7 @@ public class MiniGameHandler : MonoBehaviour
                 break;
             case MiniGameType.Precision:
                 //battleUI.NPCSpeak(battleOnFight);
-                Debug.Log("precision");
+                isWubbums = true;
                 currentMiniGame = precisionGame; 
                 break;
             case MiniGameType.Fight:
@@ -74,6 +75,7 @@ public class MiniGameHandler : MonoBehaviour
                 currentMiniGame = null;
                 break;
             case MiniGameType.NoGame:
+                battleUI.NPCSpeak(battleOnGameOver);
                 currentMiniGame = null;
                 break;
             default:
@@ -103,6 +105,7 @@ public class MiniGameHandler : MonoBehaviour
         battleUI.audioManager.PlayRightSFX();
         phases --;
         if (phases == 0){
+            if (isWubbums = true) battleUI.DragUpYourLife();
             battleUI.NPCSpeak(battleOnWin);
             return;
         }

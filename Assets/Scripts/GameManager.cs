@@ -15,15 +15,22 @@ public class GameManager : MonoBehaviour
 	public static GameManager Instance { get { return _instance; } }
 
 	[Header("Scene Build Data")] 
+	
 	[SerializeField]
 	private int mainMenuBuildIndex = 0;
+	public int GetMainMenuSceneBuildIndex => mainMenuBuildIndex;
+
 	[SerializeField]
 	private int townSceneBuildIndex = 1;
+	public int GetTownSceneBuildIndex => townSceneBuildIndex;
+
 	[SerializeField]
 	private int bakerySceneBuildIndex = 2;
+	public int GetBakerySceneBuildIndex => bakerySceneBuildIndex;
+
 	[SerializeField]
 	private int dragBarSceneBuildIndex = 3;
-	
+	public int GetDragBarSceneBuildIndex => dragBarSceneBuildIndex;
 	
 	[Header("Scene Transition Options")]
 	[SerializeField]
@@ -34,7 +41,6 @@ public class GameManager : MonoBehaviour
 	
 	//Positional Data
 	private Vector3 lastPlayerPositionInTown;
-	private int currentScene = 0;
 
 	
 	private void Awake()
@@ -59,7 +65,7 @@ public class GameManager : MonoBehaviour
 		Debug.Log("Saving data...");
 		
 		//When transitioning out of town scene.
-		if (toBuildIndex != townSceneBuildIndex && fromBuildIndex != mainMenuBuildIndex)
+		if (fromBuildIndex == townSceneBuildIndex && (toBuildIndex == bakerySceneBuildIndex || toBuildIndex == dragBarSceneBuildIndex))
 		{
 			//Save player location data in town to load back when coming back to TownScene
 			GameObject player = GameObject.FindWithTag("Player");
@@ -83,6 +89,7 @@ public class GameManager : MonoBehaviour
 		//When transitioning into town scene (not from main menu)
 		if (toBuildIndex == townSceneBuildIndex && fromBuildIndex != mainMenuBuildIndex)
 		{
+			//Load player location data
 			GameObject player = GameObject.FindWithTag("Player");
 			if (player)
 			{
@@ -92,6 +99,15 @@ public class GameManager : MonoBehaviour
 			{
 				Debug.LogWarning("Couldn't load player location data. No player found. Check for instance made or `Player` tag set.");
 			}
+		}
+
+		if (toBuildIndex == townSceneBuildIndex )
+		{
+			AudioManager.Instance.PlayTravelingTheme();
+		}
+		else if (toBuildIndex == bakerySceneBuildIndex || toBuildIndex == dragBarSceneBuildIndex)
+		{
+			AudioManager.Instance.PlayBattleTheme();
 		}
 		
 	}
@@ -143,11 +159,6 @@ public class GameManager : MonoBehaviour
 		}
 		
 		blackoutScreen.gameObject.SetActive(false);
-		currentScene = toBuildIndex;
-	}
-
-	public int GetCurrentScene(){
-		return currentScene;
 	}
 
 	public void LoadMainMenuScene()

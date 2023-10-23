@@ -49,81 +49,145 @@ public class AudioManager : MonoBehaviour
 	}
     public void PlayMainMenuTheme()
     {
+        if (bgmAudioSource.clip == gameMainThemeMusic)
+        {
+            return;
+        }
+        
         bgmAudioSource.Stop();
         bgmAudioSource.clip = gameMainThemeMusic;
         bgmAudioSource.Play();
     }
     public void PlayTravelingTheme()
     {
+        if (bgmAudioSource.clip == gameTravelingMusic)
+        {
+            return;
+        }
+        
         bgmAudioSource.Stop();
         bgmAudioSource.clip = gameTravelingMusic;
         bgmAudioSource.Play();
     }
     public void PlayBattleTheme()
     {
+        if (bgmAudioSource.clip == gameBattleMusic)
+        {
+            return;
+        }
+        
         bgmAudioSource.Stop();
         bgmAudioSource.clip = gameBattleMusic;
         bgmAudioSource.Play();
     }
 
     public void PlayStartGameSFX()
-    {
-        sfxAudioSource.Stop();
-        sfxAudioSource.clip = startGameSFX;
-        sfxAudioSource.Play();
-    }
-    public void PlayRightSFX()
-    {
-        sfxAudioSource.Stop();
-        sfxAudioSource.clip = rightSFX;
-        sfxAudioSource.Play();
-    }
-    public void PlayWrongSFX()
-    {
-        sfxAudioSource.Stop();
-        sfxAudioSource.clip = wrongSFX;
-        sfxAudioSource.Play();
-    }
-    public void PlayToBeHitSFX()
-    {
-        sfxAudioSource.Stop();
-        sfxAudioSource.clip = toBeHitSFX;
-        sfxAudioSource.Play();
-    }
-    public void PlayToHitSFX()
-    {
-        sfxAudioSource.Stop();
-        sfxAudioSource.clip = toHitSFX;
-        sfxAudioSource.Play();
-    }
-    public void PlayWaitingSFX()
-    {
-        sfxAudioSource.Stop();
-        sfxAudioSource.clip = waitingSFX;
-        sfxAudioSource.Play();
-    }
-    public void PlayHoverSFX()
-    {
-        sfxAudioSource.Stop();
-        sfxAudioSource.clip = onButtonHovered;
-        sfxAudioSource.Play();
-    }
-        public void PlaySelectSFX()
-    {
-        sfxAudioSource.Stop();
-        sfxAudioSource.clip = onButtonClicked;
-        sfxAudioSource.Play();
-    }
+{
+    bgmAudioSource.volume -= 10f;
 
-     public void PlayCharacterSpeaking (float pitch)
-    {
-        voxAudioSource.pitch = pitch;
-        voxAudioSource.Stop();
-        voxAudioSource.clip = characterSpeaking;
-        voxAudioSource.Play();
-    }
+    sfxAudioSource.Stop();
+    sfxAudioSource.clip = startGameSFX;
+    sfxAudioSource.Play();
+
+    bgmAudioSource.volume += 10f;
+}
+
+public void PlayRightSFX()
+{
+    bgmAudioSource.volume -= 10f;
+
+    sfxAudioSource.Stop();
+    sfxAudioSource.clip = rightSFX;
+    sfxAudioSource.Play();
+
+    bgmAudioSource.volume += 10f;
+}
+
+public void PlayWrongSFX()
+{
+    bgmAudioSource.volume -= 10f;
+
+    sfxAudioSource.Stop();
+    sfxAudioSource.clip = wrongSFX;
+    sfxAudioSource.Play();
+
+    bgmAudioSource.volume += 10f;
+}
+
+public void PlayToBeHitSFX()
+{
+    bgmAudioSource.volume -= 10f;
+
+    sfxAudioSource.Stop();
+    sfxAudioSource.clip = toBeHitSFX;
+    sfxAudioSource.Play();
+
+    bgmAudioSource.volume += 10f;
+}
+
+public void PlayToHitSFX()
+{
+    bgmAudioSource.volume -= 10f;
+
+    sfxAudioSource.Stop();
+    sfxAudioSource.clip = toHitSFX;
+    sfxAudioSource.Play();
+
+    bgmAudioSource.volume += 10f;
+}
+
+public void PlayWaitingSFX()
+{
+    bgmAudioSource.volume -= 10f;
+
+    sfxAudioSource.Stop();
+    sfxAudioSource.clip = waitingSFX;
+    sfxAudioSource.Play();
+
+    bgmAudioSource.volume += 10f;
+}
+
+public void PlayHoverSFX()
+{
+    bgmAudioSource.volume -= 10f;
+
+    sfxAudioSource.Stop();
+    sfxAudioSource.clip = onButtonHovered;
+    sfxAudioSource.Play();
+
+    bgmAudioSource.volume += 10f;
+}
+
+public void PlaySelectSFX()
+{
+    bgmAudioSource.volume -= 10f;
+
+    sfxAudioSource.Stop();
+    sfxAudioSource.clip = onButtonClicked;
+    sfxAudioSource.Play();
+
+    bgmAudioSource.volume += 10f;
+}
+
+public void PlayCharacterSpeaking(float pitch)
+{
+    voxAudioSource.pitch = pitch;
+    voxAudioSource.volume -= 10f;
+
+    voxAudioSource.Stop();
+    voxAudioSource.clip = characterSpeaking;
+    voxAudioSource.Play();
+
+    bgmAudioSource.volume += 10f;
+}
+
 
     public void StopCharacterSpeaking(){
         voxAudioSource.Stop();
     }
+
+    public void StopBGMusic(){
+        bgmAudioSource.Stop();
+    }
+
 }
