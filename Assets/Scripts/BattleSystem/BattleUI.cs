@@ -94,13 +94,13 @@ public class BattleUI : MonoBehaviour
         Debug.Log("Resetting level");
         yield return new WaitForSeconds(3.0f);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if (currentSceneIndex == GameManager.Instance.GetBakerySceneBuildIndex)
+        if (currentSceneIndex == GameManager.Instance.GetBakeryBattleSceneBuildIndex)
         {
-            GameManager.Instance.LoadBakeryScene();
+            GameManager.Instance.LoadBakeryBattleScene();
         }
-        if (currentSceneIndex == GameManager.Instance.GetDragBarSceneBuildIndex)
+        if (currentSceneIndex == GameManager.Instance.GetDragBarBattleSceneBuildIndex)
         {
-            GameManager.Instance.LoadDragBarScene();
+            GameManager.Instance.LoadDragBarBattleScene();
         }
     }
 

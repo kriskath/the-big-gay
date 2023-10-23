@@ -29,5 +29,5 @@ public class DialogueHandler : MonoBehaviour
             player = FindObjectOfType<Player>(); 
         }
     }
-    
+
 }
