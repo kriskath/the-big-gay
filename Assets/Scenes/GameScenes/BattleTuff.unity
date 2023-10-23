@@ -3620,6 +3620,14 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1197340369}
+    - target: {fileID: 6762463356329735830, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2882573834426150502, guid: edc361a8f3d1f5e16835442276b5c681, type: 2}
+    - target: {fileID: 6762463356329735830, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7317080653001434481, guid: d1c5456c615d88c49ab78ce87d5cfc7f, type: 3}
       propertyPath: m_Name
       value: BattleUI
