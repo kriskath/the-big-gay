@@ -37,7 +37,5 @@ public class DoorInteract : MonoBehaviour
                     return;
             }
         }
-        
-        //ToDo: Display text info
     }
 }

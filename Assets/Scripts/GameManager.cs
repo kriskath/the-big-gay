@@ -79,6 +79,11 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public bool IsBakeryAndDragFinished()
+	{
+		return bFinishedBakery && bFinishedDrag;
+	}
+	
 	#region Data Management
 
 	private void SaveData(int fromBuildIndex, int toBuildIndex)
