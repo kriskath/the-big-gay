@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 namespace MenuAsset
 {
@@ -24,9 +26,13 @@ namespace MenuAsset
         [Tooltip("Default Resolution Dropdown.")]
         [SerializeField] private Dropdown defaultResolutionDropdown;
 
+        [Header("Pause Menu")] 
+        [SerializeField]
+        private GameObject PauseMenuGroup;
+        
         private Resolution[] resolutions;
         private int currentResolutionIndex;
-
+        
         private void Start()
         {
             resolutions = Screen.resolutions;
@@ -51,6 +57,21 @@ namespace MenuAsset
             }
         }
 
+        private void Update()
+        {
+            if (PauseMenuGroup && Input.GetKeyDown(KeyCode.Escape))
+            {
+                SetMenuActiveState();
+            }
+        }
+
+        public void SetMenuActiveState()
+        {
+            if (GameManager.Instance.GetMainMenuSceneBuildIndex == SceneManager.GetActiveScene().buildIndex)
+                return;
+            PauseMenuGroup.SetActive(!PauseMenuGroup.activeSelf);
+        }
+
         //Gets list of resolutions as a string and returns
         //Also sets default resolution
         private List<string> ResolutionsFunction()
@@ -72,7 +93,12 @@ namespace MenuAsset
             return options;
         }
 
-
+        public void QuitGame()
+        {
+            Debug.Log("Quit Game");
+            Application.Quit();
+        }
+        
         public void SetResolution(int resolutionIndex)
         {
             Resolution res = resolutions[resolutionIndex];
