@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2265846795782566259, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4720688024466374702, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 546.0362
@@ -200,6 +204,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 736106979660269301, guid: 6cc18a419f53d224cbe24ee3c84e6a66, type: 3}
+      propertyPath: place
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 736106979660269301, guid: 6cc18a419f53d224cbe24ee3c84e6a66, type: 3}
       propertyPath: preFight
       value: 

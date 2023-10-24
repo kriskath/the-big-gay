@@ -7,7 +7,8 @@ public enum Place
 {
     Dragbar,
     Bakery,
-    Overworld
+    Overworld,
+    Other
 }
 public class NPCDialogueInside : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class NPCDialogueInside : MonoBehaviour
                     }
                 else ConversationManager.Instance.StartConversation(preFight);
                 break;
+            case (Place.Other):
+                ConversationManager.Instance.StartConversation(preFight);
+                break;
+
         }
 
         

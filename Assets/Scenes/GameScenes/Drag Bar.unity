@@ -709,6 +709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2265846795782566259, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2999067972237615111, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
       propertyPath: dragBarSceneBuildIndex
       value: 4

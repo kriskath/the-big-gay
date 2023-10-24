@@ -102,6 +102,9 @@ namespace DialogueEditor
             }
             Instance = this;
 
+            if (AudioPlayer == null){
+                AudioPlayer = AudioManager.Instance;
+            }
             m_uiOptions = new List<UIConversationButton>();
 
             NpcIcon.sprite = BlankSprite;
