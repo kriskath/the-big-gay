@@ -1628,6 +1628,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1875575489}
     - target: {fileID: 736106979660269301, guid: 6cc18a419f53d224cbe24ee3c84e6a66, type: 3}
+      propertyPath: postFight
+      value: 
+      objectReference: {fileID: 1774622403}
+    - target: {fileID: 736106979660269301, guid: 6cc18a419f53d224cbe24ee3c84e6a66, type: 3}
       propertyPath: postFightWin
       value: 
       objectReference: {fileID: 1774622403}
