@@ -23,4 +23,9 @@ public class DialogueFinishedTransitionHandler : MonoBehaviour
     {
         GameManager.Instance.LoadDragBarBattleScene();
     }
+
+    public void LoadOverworld()
+    {
+        GameManager.Instance.LoadTownScene();
+    }
 }

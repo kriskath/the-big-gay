@@ -6100,6 +6100,10 @@ PrefabInstance:
       propertyPath: voxAudioSource
       value: 
       objectReference: {fileID: 260387829}
+    - target: {fileID: 5469524331280977777, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
+      propertyPath: characterSpeaking
+      value: 
+      objectReference: {fileID: 8300000, guid: 478a756af6e76e34a83457cf12c10123, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
