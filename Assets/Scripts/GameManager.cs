@@ -173,7 +173,7 @@ public class GameManager : MonoBehaviour
 			}
 		}
 
-		if (toBuildIndex == townSceneBuildIndex)
+		if (toBuildIndex == townSceneBuildIndex || (fromBuildIndex == bakeryBattleSceneBuildIndex && toBuildIndex == bakerySceneBuildIndex) || (fromBuildIndex == dragBarBattleSceneBuildIndex && toBuildIndex == dragBarSceneBuildIndex))
 		{
 			AudioManager.Instance.PlayTravelingTheme();
 		}
