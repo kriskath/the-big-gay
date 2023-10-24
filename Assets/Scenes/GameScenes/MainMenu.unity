@@ -7452,6 +7452,10 @@ PrefabInstance:
       propertyPath: gameTravelingMusic
       value: 
       objectReference: {fileID: 8300000, guid: 548e9b5b6e723ab45a27ec1aadca903c, type: 3}
+    - target: {fileID: 6021955872792189256, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6313156535283191154, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
       propertyPath: m_IsActive
       value: 0
