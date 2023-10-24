@@ -17,7 +17,7 @@ public class DialogueFinishedTransitionHandler : MonoBehaviour
     
     public void LoadAfterDragBarBattle()
     {
-        GameManager.Instance.SetBakeryFinished(true);
+        GameManager.Instance.SetDragFinished(true);
         GameManager.Instance.LoadDragBarScene();
     }
     
