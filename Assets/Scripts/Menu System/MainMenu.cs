@@ -33,7 +33,7 @@ namespace MenuAsset
 
         public void PlayGameFromGameManager()
         {
-            GameManager.Instance.LoadTownScene();
+            GameManager.Instance.LoadIntroScene();
         }
 
         public void QuitGame()
