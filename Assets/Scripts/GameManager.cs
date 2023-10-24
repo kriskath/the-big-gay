@@ -21,24 +21,32 @@ public class GameManager : MonoBehaviour
 	public int GetMainMenuSceneBuildIndex => mainMenuBuildIndex;
 
 	[SerializeField]
-	private int townSceneBuildIndex = 1;
+	private int introSceneBuildIndex = 1;
+	public int GetIntroSceneBuildIndex => introSceneBuildIndex;
+
+	[SerializeField]
+	private int townSceneBuildIndex = 2;
 	public int GetTownSceneBuildIndex => townSceneBuildIndex;
 
 	[SerializeField]
-	private int bakerySceneBuildIndex = 2;
+	private int bakerySceneBuildIndex = 3;
 	public int GetBakerySceneBuildIndex => bakerySceneBuildIndex;
 
 	[SerializeField]
-	private int bakeryBattleSceneBuildIndex = 3;
+	private int bakeryBattleSceneBuildIndex = 4;
 	public int GetBakeryBattleSceneBuildIndex => bakeryBattleSceneBuildIndex;
 	
 	[SerializeField]
-	private int dragBarSceneBuildIndex = 4;
+	private int dragBarSceneBuildIndex = 5;
 	public int GetDragBarSceneBuildIndex => dragBarSceneBuildIndex;
 	
 	[SerializeField]
-	private int dragBarBattleSceneBuildIndex = 5;
+	private int dragBarBattleSceneBuildIndex = 6;
 	public int GetDragBarBattleSceneBuildIndex => dragBarBattleSceneBuildIndex;
+
+	[SerializeField]
+	private int outroSceneBuildIndex = 7;
+	public int GetOutroSceneBuildIndex => outroSceneBuildIndex;
 	
 	[Header("Scene Transition Options")]
 	[SerializeField]
@@ -79,10 +87,30 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public bool IsBakeryFinished()
+	{
+		return bFinishedBakery;
+	}
+
+
+	public void SetBakeryFinished(bool bvalue){
+		bFinishedBakery = bvalue;
+	}
+
+	public void SetDragFinished(bool bvalue){
+		bFinishedDrag = bvalue;
+	}
+	public bool IsDragFinished()
+	{
+		return bFinishedDrag;
+	}
+
 	public bool IsBakeryAndDragFinished()
 	{
 		return bFinishedBakery && bFinishedDrag;
 	}
+
+
 	
 	#region Data Management
 
@@ -145,7 +173,7 @@ public class GameManager : MonoBehaviour
 			}
 		}
 
-		if (toBuildIndex == townSceneBuildIndex )
+		if (toBuildIndex == townSceneBuildIndex)
 		{
 			AudioManager.Instance.PlayTravelingTheme();
 		}
@@ -153,7 +181,6 @@ public class GameManager : MonoBehaviour
 		{
 			AudioManager.Instance.PlayBattleTheme();
 		}
-		
 	}
 
 	#endregion //Data Management
@@ -205,6 +232,11 @@ public class GameManager : MonoBehaviour
 		blackoutScreen.gameObject.SetActive(false);
 	}
 
+	public void LoadIntroScene()
+	{
+		StartCoroutine(TransitionScene(introSceneBuildIndex));
+	}
+
 	public void LoadMainMenuScene()
 	{
 		StartCoroutine(TransitionScene(mainMenuBuildIndex));
@@ -234,7 +266,11 @@ public class GameManager : MonoBehaviour
 	{
 		StartCoroutine(TransitionScene(dragBarSceneBuildIndex));
 	}
-	
+
+	public void LoadOutroScene()
+	{
+		StartCoroutine(TransitionScene(outroSceneBuildIndex));
+	}
 	
 	#endregion
 

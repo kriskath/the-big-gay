@@ -6,6 +6,7 @@ public class DialogueFinishedTransitionHandler : MonoBehaviour
 {
     public void LoadAfterBakeryBattle()
     {
+        GameManager.Instance.SetBakeryFinished(true);
         GameManager.Instance.LoadBakeryScene();
     }
 
@@ -16,6 +17,7 @@ public class DialogueFinishedTransitionHandler : MonoBehaviour
     
     public void LoadAfterDragBarBattle()
     {
+        GameManager.Instance.SetBakeryFinished(true);
         GameManager.Instance.LoadDragBarScene();
     }
     
@@ -26,6 +28,13 @@ public class DialogueFinishedTransitionHandler : MonoBehaviour
 
     public void LoadOverworld()
     {
-        GameManager.Instance.LoadTownScene();
+        if ( GameManager.Instance.IsBakeryAndDragFinished())
+        {
+            GameManager.Instance.LoadOutroScene();
+        }
+        else
+        {
+            GameManager.Instance.LoadTownScene();
+        }
     }
 }

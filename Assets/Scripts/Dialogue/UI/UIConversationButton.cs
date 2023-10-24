@@ -84,9 +84,6 @@ namespace DialogueEditor
             }
         }
 
-
-
-
         //--------------------------------------
         // Input Events
         //--------------------------------------
@@ -116,9 +113,6 @@ namespace DialogueEditor
         {
             DoClickBehaviour();
         }
-
-
-
 
         //--------------------------------------
         // Public calls
@@ -192,6 +186,7 @@ namespace DialogueEditor
 
                 case eButtonType.Speech:
                     {
+                        // change it here for arrow
                         TextMesh.text = "Continue.";
                         TextMesh.font = continueFont;
                     }

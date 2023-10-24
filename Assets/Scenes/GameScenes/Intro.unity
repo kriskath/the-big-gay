@@ -209,6 +209,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2056000924097998081, guid: 6cc18a419f53d224cbe24ee3c84e6a66, type: 3}
+      propertyPath: AudioPlayer
+      value: 
+      objectReference: {fileID: 1459777534}
+    - target: {fileID: 2056000924097998081, guid: 6cc18a419f53d224cbe24ee3c84e6a66, type: 3}
       propertyPath: OptionImage
       value: 
       objectReference: {fileID: 21300000, guid: a59e8dd3214107b4aacfe08398a30a08, type: 3}
@@ -697,6 +701,17 @@ Transform:
   - {fileID: 1198643990}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1459777534 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5469524331280977777, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
+  m_PrefabInstance: {fileID: 10606562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfbd1cad29b38a3b2a8803de171ba033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1640534062
 GameObject:
   m_ObjectHideFlags: 0

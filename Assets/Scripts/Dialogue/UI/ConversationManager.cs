@@ -41,6 +41,7 @@ namespace DialogueEditor
         public bool OptionImageSliced;
         public TMP_FontAsset AllFont;
         public bool AllowMouseInteraction;
+        public AudioManager AudioPlayer;
         
 
         // Non-User facing 
@@ -55,7 +56,8 @@ namespace DialogueEditor
         public TMPro.TextMeshProUGUI NameText;
         public TMPro.TextMeshProUGUI DialogueText;
         // Components
-        public AudioSource AudioPlayer;
+        //public AudioSource AudioPlayer;
+        
         // Prefabs
         public UIConversationButton ButtonPrefab;
         public UIConversationButton ButtonPrefabSelect;
@@ -196,6 +198,7 @@ namespace DialogueEditor
 
             UIConversationButton button = m_uiOptions[m_currentSelectedIndex];
             button.OnButtonPressed();
+            //AudioPlayer.PlaySelectSFX();
         }
 
         public void AlertHover(UIConversationButton button)
@@ -359,7 +362,7 @@ namespace DialogueEditor
                 m_scrollIndex++;
                 if (AudioPlayer != null)
                 {
-                    AudioPlayer.Play();
+                    //AudioPlayer.PlayCharacterSpeaking(1f);
                 }
                 // Finished?
                 if (m_scrollIndex >= m_targetScrollTextCount)
@@ -387,6 +390,7 @@ namespace DialogueEditor
         private void Idle_Update()
         {
             m_stateTime += Time.deltaTime;
+            AudioPlayer.StopCharacterSpeaking();
 
             if (m_currentSpeech.AutomaticallyAdvance)
             {
@@ -465,6 +469,7 @@ namespace DialogueEditor
 
         private void SetupSpeech(SpeechNode speech)
         {
+            AudioPlayer.StopCharacterSpeaking();
             if (speech == null)
             {
                 EndConversation();
@@ -541,13 +546,24 @@ namespace DialogueEditor
             DoParamAction(speech);
 
             // Play the audio
+            /*
             if (speech.Audio != null)
             {
                 AudioPlayer.clip = speech.Audio;
                 AudioPlayer.volume = speech.Volume;
                 AudioPlayer.Play();
             }
-
+            */
+            if (NameText.text.ToLower() == "wubbums"){
+                AudioPlayer.PlayCharacterSpeaking(0.8f);
+            }
+            else if (NameText.text.ToLower() == "tufftons"){
+                AudioPlayer.PlayCharacterSpeaking(1.5f);
+            }
+            else {
+                AudioPlayer.PlayCharacterSpeaking(1f);
+            }
+            
             if (ScrollText)
             {
                 SetState(eState.ScrollingText);
@@ -751,6 +767,7 @@ namespace DialogueEditor
             m_uiOptions[index].SetImage(OptionImageSelected, OptionImageSliced);
             m_uiOptions[m_currentSelectedIndex].SetColorFont(Color.white);
             m_uiOptions[index].SetHovering(true);
+            //AudioPlayer.PlayHoverSFX();
 
             for (int i = 0; i < m_uiOptions.Count; i++)
             {

@@ -45,21 +45,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbd1cad29b38a3b2a8803de171ba033, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgmAudioSource: {fileID: 0}
+  bgmAudioSource: {fileID: 46760130170103786}
   gameMainThemeMusic: {fileID: 8300000, guid: 04009e03fef92d747b16390a64a9702d, type: 3}
   gameTravelingMusic: {fileID: 8300000, guid: 548e9b5b6e723ab45a27ec1aadca903c, type: 3}
   gameBattleMusic: {fileID: 8300000, guid: a8b93202a8d813141a7569c8e2dbca21, type: 3}
-  sfxAudioSource: {fileID: 0}
+  sfxAudioSource: {fileID: 46760130170103786}
   onButtonHovered: {fileID: 8300000, guid: 398cf57dd137fb6409746deb174a3c45, type: 3}
   onButtonClicked: {fileID: 8300000, guid: 2513a3f36513ea248b6448c6a5fd5eba, type: 3}
-  startGameSFX: {fileID: 0}
+  startGameSFX: {fileID: 8300000, guid: 2053a61692bc2d04c9bab4723b76bc06, type: 3}
   rightSFX: {fileID: 8300000, guid: e24ecba420171e44ea4c4e0d15b943b9, type: 3}
   wrongSFX: {fileID: 8300000, guid: d70f2f5416407b94ab0f95d016f84fc0, type: 3}
   toBeHitSFX: {fileID: 8300000, guid: b87aa0b47c69ab34a93719a89c610613, type: 3}
   toHitSFX: {fileID: 8300000, guid: 3ce872ddcc634c240bb0ba952e3aaf28, type: 3}
   waitingSFX: {fileID: 8300000, guid: 3e0f2dcb2b702e645896af3a5bed55e9, type: 3}
-  voxAudioSource: {fileID: 0}
-  characterSpeaking: {fileID: 0}
+  voxAudioSource: {fileID: 46760130170103786}
+  characterSpeaking: {fileID: 8300000, guid: 478a756af6e76e34a83457cf12c10123, type: 3}
 --- !u!82 &46760130170103786
 AudioSource:
   m_ObjectHideFlags: 0
@@ -208,7 +208,9 @@ MonoBehaviour:
   mainMenuBuildIndex: 0
   townSceneBuildIndex: 1
   bakerySceneBuildIndex: 2
+  bakeryBattleSceneBuildIndex: 3
   dragBarSceneBuildIndex: 3
+  dragBarBattleSceneBuildIndex: 5
   blackoutScreen: {fileID: 3982692288478199080}
   blackoutSpeed: 1
 --- !u!1 &6110852773611736376
