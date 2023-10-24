@@ -557,14 +557,16 @@ namespace DialogueEditor
                 AudioPlayer.Play();
             }
             */
-            if (NameText.text.ToLower() == "wubbums"){
-                AudioPlayer.PlayCharacterSpeaking(0.8f);
-            }
-            else if (NameText.text.ToLower() == "tufftons"){
-                AudioPlayer.PlayCharacterSpeaking(1.5f);
-            }
-            else {
-                AudioPlayer.PlayCharacterSpeaking(1f);
+            if (NameText.text != null){
+                if (NameText.text.ToLower() == "wubbums"){
+                    AudioPlayer.PlayCharacterSpeaking(0.8f);
+                }
+                else if (NameText.text.ToLower() == "tufftons"){
+                    AudioPlayer.PlayCharacterSpeaking(1.5f);
+                }
+                else {
+                    AudioPlayer.PlayCharacterSpeaking(1f);
+                }
             }
             
             if (ScrollText)

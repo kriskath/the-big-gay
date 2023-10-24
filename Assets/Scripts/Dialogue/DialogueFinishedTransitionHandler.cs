@@ -37,4 +37,10 @@ public class DialogueFinishedTransitionHandler : MonoBehaviour
             GameManager.Instance.LoadTownScene();
         }
     }
+
+    public void LoadTown()
+    {
+        GameManager.Instance.LoadTownScene();
+    }
+
 }

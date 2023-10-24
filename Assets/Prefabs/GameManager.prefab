@@ -206,11 +206,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   mainMenuBuildIndex: 0
-  townSceneBuildIndex: 1
-  bakerySceneBuildIndex: 2
-  bakeryBattleSceneBuildIndex: 3
-  dragBarSceneBuildIndex: 3
-  dragBarBattleSceneBuildIndex: 5
+  introSceneBuildIndex: 1
+  townSceneBuildIndex: 2
+  bakerySceneBuildIndex: 3
+  bakeryBattleSceneBuildIndex: 4
+  dragBarSceneBuildIndex: 5
+  dragBarBattleSceneBuildIndex: 6
+  outroSceneBuildIndex: 7
   blackoutScreen: {fileID: 3982692288478199080}
   blackoutSpeed: 1
 --- !u!1 &6110852773611736376
