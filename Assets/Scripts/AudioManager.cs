@@ -172,7 +172,7 @@ public void PlaySelectSFX()
 public void PlayCharacterSpeaking(float pitch)
 {
     voxAudioSource.pitch = pitch;
-    voxAudioSource.volume -= 10f;
+    bgmAudioSource.volume -= 10f;
 
     voxAudioSource.Stop();
     voxAudioSource.clip = characterSpeaking;
