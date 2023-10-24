@@ -1822,11 +1822,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 946975072488044149, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
   m_PrefabInstance: {fileID: 956415482795237632}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &575617313 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 46760130170103786, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
-  m_PrefabInstance: {fileID: 956415482795237632}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &575617315
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3128,6 +3123,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!82 &934986944 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5730389269246135213, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
+  m_PrefabInstance: {fileID: 956415482795237632}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &935003600
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,6 +3290,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948063124}
   m_CullTransparentMesh: 1
+--- !u!82 &1018394987 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1552333764507740009, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
+  m_PrefabInstance: {fileID: 956415482795237632}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1031731015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3859,6 +3864,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!82 &1251269093 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2365846339774694457, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
+  m_PrefabInstance: {fileID: 956415482795237632}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259367918
 GameObject:
   m_ObjectHideFlags: 0
@@ -7337,7 +7347,7 @@ PrefabInstance:
     - target: {fileID: 46760130170103786, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 3134017920941160804, guid: 5a4314cc3feaa9c4ea89957bffcdba15, type: 2}
+      objectReference: {fileID: 24300002, guid: 5a4314cc3feaa9c4ea89957bffcdba15, type: 2}
     - target: {fileID: 2265846795782566259, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -7409,15 +7419,15 @@ PrefabInstance:
     - target: {fileID: 5469524331280977777, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
       propertyPath: bgmAudioSource
       value: 
-      objectReference: {fileID: 575617315}
+      objectReference: {fileID: 934986944}
     - target: {fileID: 5469524331280977777, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
       propertyPath: sfxAudioSource
       value: 
-      objectReference: {fileID: 575617313}
+      objectReference: {fileID: 1018394987}
     - target: {fileID: 5469524331280977777, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
       propertyPath: voxAudioSource
       value: 
-      objectReference: {fileID: 575617313}
+      objectReference: {fileID: 1251269093}
     - target: {fileID: 5469524331280977777, guid: eb9dcc7731d8e5518a9929f22957b2bf, type: 3}
       propertyPath: gameBattleMusic
       value: 
