@@ -2780,7 +2780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 646c28137cb0ecb47bafdfe3bf638506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillRate: 0.05
+  fillRate: 0.085
   maxMeterValue: 1
   smoothTransitionSpeed: 30
   meterSlider: {fileID: 783561805}

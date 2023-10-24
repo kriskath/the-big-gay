@@ -103,7 +103,7 @@ namespace DialogueEditor
             Instance = this;
 
             
-            AudioPlayer = AudioManager.Instance;
+            //AudioPlayer = AudioManager.Instance;
             
             m_uiOptions = new List<UIConversationButton>();
 

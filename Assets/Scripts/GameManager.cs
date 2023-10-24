@@ -274,4 +274,8 @@ public class GameManager : MonoBehaviour
 	
 	#endregion
 
+
+	public AudioManager GetAudioManager(){
+		return AudioManager.Instance;
+	}
 }
